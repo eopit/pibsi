@@ -10,8 +10,8 @@ public class Printer {
         System.out.println("      (__I__)    ");
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
-        System.out.println("  | | '  |  ' | |");
-        System.out.println("  | | 9  /  3 | |");
+        System.out.println("  | | '     ' | |");
+        System.out.println("  | | 9     3 | |");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
@@ -25,14 +25,14 @@ public class Printer {
         System.out.println("    ( (__I__) )  ");
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
-        System.out.println("  | | '  |  ' | |");
-        System.out.println("  | | 9  /  3 | |");
+        System.out.println("  | | '     ' | |");
+        System.out.println("  | | 9     3 | |");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
         System.out.println("    `\"\"\"\"\"\"\"\"\"`");
 
-        Thread.sleep(600); //espera 0,8s pra limpar rodar o comando abaixo
+        Thread.sleep(600); //espera 0,6s pra limpar rodar o comando abaixo
 
         clearConsole();
 
@@ -40,14 +40,14 @@ public class Printer {
         System.out.println("   (( (__I__) )) ");
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
-        System.out.println("  | | '  |  ' | |");
-        System.out.println("  | | 9  /  3 | |");
+        System.out.println("  | | '     ' | |");
+        System.out.println("  | | 9     3 | |");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
         System.out.println("    `\"\"\"\"\"\"\"\"\"`");
 
-        Thread.sleep(600); //espera 0,8s pra limpar rodar o comando abaixo
+        Thread.sleep(600); //espera 0,6s pra limpar rodar o comando abaixo
 
         clearConsole();
 
@@ -55,14 +55,14 @@ public class Printer {
         System.out.println("  ((( (__I__) )))");
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
-        System.out.println("  | | '  |  ' | |");
-        System.out.println("  | | 9  /  3 | |");
+        System.out.println("  | | '     ' | |");
+        System.out.println("  | | 9     3 | |");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
         System.out.println("    `\"\"\"\"\"\"\"\"\"`");
 
-        Thread.sleep(600); //espera 0,8s pra limpar rodar o comando abaixo
+        Thread.sleep(600); //espera 0,6s pra limpar rodar o comando abaixo
 
         clearConsole();
 
@@ -71,14 +71,14 @@ public class Printer {
         System.out.println("    ( (__I__) )  ");
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
-        System.out.println("  | | '  |  ' | |");
-        System.out.println("  | | 9  /  3 | |");
+        System.out.println("  | | '     ' | |");
+        System.out.println("  | | 9     3 | |");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
         System.out.println("    `\"\"\"\"\"\"\"\"\"`");
 
-        Thread.sleep(600); //espera 0,8s pra limpar rodar o comando abaixo
+        Thread.sleep(600); //espera 0,6s pra limpar rodar o comando abaixo
 
         clearConsole();
 
@@ -86,8 +86,8 @@ public class Printer {
         System.out.println("   (( (__I__) )) ");
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
-        System.out.println("  | | '  |  ' | |");
-        System.out.println("  | | 9  /  3 | |");
+        System.out.println("  | | '     ' | |");
+        System.out.println("  | | 9     3 | |");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
@@ -101,14 +101,14 @@ public class Printer {
         System.out.println("  ((( (__I__) )))");
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
-        System.out.println("  | | '  |  ' | |");
-        System.out.println("  | | 9  /  3 | |");
+        System.out.println("  | | '     ' | |");
+        System.out.println("  | | 9     3 | |");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
         System.out.println("    `\"\"\"\"\"\"\"\"\"`");
 
-        Thread.sleep(600); //espera 0,8s pra limpar rodar o comando abaixo
+        Thread.sleep(600); //espera 0,6s pra limpar rodar o comando abaixo
 
         clearConsole();
 
@@ -116,14 +116,14 @@ public class Printer {
         System.out.println("    ( (__I__) )  ");
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
-        System.out.println("  | | '  |  ' | |");
-        System.out.println("  | | 9  /  3 | |");
+        System.out.println("  | | '     ' | |");
+        System.out.println("  | | 9     3 | |");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
         System.out.println("    `\"\"\"\"\"\"\"\"\"`");
 
-        Thread.sleep(600); //espera 0,8s pra limpar rodar o comando abaixo
+        Thread.sleep(600); //espera 0,6s pra limpar rodar o comando abaixo
 
         clearConsole();
 
@@ -131,14 +131,14 @@ public class Printer {
         System.out.println("   (( (__I__) )) ");
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
-        System.out.println("  | | '  |  ' | |");
-        System.out.println("  | | 9  /  3 | |");
+        System.out.println("  | | '     ' | |");
+        System.out.println("  | | 9     3 | |");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
         System.out.println("    `\"\"\"\"\"\"\"\"\"`");
 
-        Thread.sleep(600); //espera 0,8s pra limpar rodar o comando abaixo
+        Thread.sleep(600); //espera 0,6s pra limpar rodar o comando abaixo
 
         clearConsole();
 
@@ -146,14 +146,14 @@ public class Printer {
         System.out.println("  ((( (__I__) )))");
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
-        System.out.println("  | | '  |  ' | |");
-        System.out.println("  | | 9  /  3 | |");
+        System.out.println("  | | '     ' | |");
+        System.out.println("  | | 9     3 | |");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
         System.out.println("    `\"\"\"\"\"\"\"\"\"`");
 
-        Thread.sleep(600); //espera 0,8s pra limpar rodar o comando abaixo
+        Thread.sleep(600); //espera 0,6s pra limpar rodar o comando abaixo
     }
 
     public static void clearConsole() throws InterruptedException, IOException { //metodo que limpa o console
