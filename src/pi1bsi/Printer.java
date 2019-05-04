@@ -9,6 +9,7 @@ public class Printer {
         System.out.println("       .-.-.");
         System.out.println("      (__I__)    ");
         System.out.println("    .'_....._'.");
+
         System.out.println("   / / .12 . \\ \\");
         System.out.println("  | | '     ' | |");
         System.out.println("  | | 9     3 | |");
@@ -26,7 +27,7 @@ public class Printer {
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
         System.out.println("  | | '     ' | |");
-        System.out.println("  | | 9     3 | |");
+        System.out.println("  | | 9     3 | |          sexta-feira!");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
@@ -56,7 +57,7 @@ public class Printer {
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
         System.out.println("  | | '     ' | |");
-        System.out.println("  | | 9     3 | |");
+        System.out.println("  | | 9     3 | |          sexta-feira!");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
@@ -87,7 +88,7 @@ public class Printer {
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
         System.out.println("  | | '     ' | |");
-        System.out.println("  | | 9     3 | |");
+        System.out.println("  | | 9     3 | |          sexta-feira!");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
@@ -117,7 +118,7 @@ public class Printer {
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
         System.out.println("  | | '     ' | |");
-        System.out.println("  | | 9     3 | |");
+        System.out.println("  | | 9     3 | |          sexta-feira!");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
@@ -147,7 +148,7 @@ public class Printer {
         System.out.println("    .'_....._'.");
         System.out.println("   / / .12 . \\ \\");
         System.out.println("  | | '     ' | |");
-        System.out.println("  | | 9     3 | |");
+        System.out.println("  | | 9     3 | |          sexta-feira!");
         System.out.println("   \\ \\ '.6.' / /");
         System.out.println("    '.`-...-'.'");
         System.out.println("     /'-- --'\\");
