@@ -155,17 +155,18 @@ public class Game {
                 "fundo tem uma garota com um cachorro. Ao deslizar o dedo sobre a tela, o plano de fundo muda e o celular " +
                 "trava e pede para seja feito uma recuperacao do sistema.");
 
+
         System.out.println("\nO que voce deseja fazer?");
         Thread.sleep(400);
         System.out.println("[A] = Fazer a recuperacao do sistema\t\t[B] = Tentar achar outra maneira para nao resetar o celular");
+        decision = ""; //testando pra ver se o bug sai
+
 
         while (loop) { // loop pra ficar rodando enquanto ele nao formatar.
             do {
                 System.out.print(">");
-//                System.out.println("TESTE DA VARIAVEL ANTES1 <<<<< -" + decision + "-"); //CLEANUP
                 decision = sc.nextLine();
-//                System.out.println("TESTE DA VARIAVEL DEPOIS1 <<<<< -" + decision + "-"); //CLEANUP
-
+                decision = sc.nextLine();
                 if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B")) { // ESSE IF SERVE APENAS PARA ESCREVER O QUE O USUARIO DEVE FAZER
                     System.err.println("Digite apenas \"A\" ou \"B\"!");
                 }
@@ -178,19 +179,25 @@ public class Game {
 
             } else { //escolheu B
                 System.out.println("Voce tenta achar outra maneira porem nao consegue.");
+                System.out.println("[A] = Fazer a recuperacao do sistema\t\t[B] = Tentar achar outra maneira para nao resetar o celular");
             }
         }
     }
 
     public static void phoneReset() throws InterruptedException {
         Thread.sleep(500);
+
         System.out.println("Ao realizar a recuperacao do sistema, a Lorem eh ativada e comecam a surgir diversas " +
                 "perguntas na tela.");
         System.out.println("\nOla, Raquel! Verifiquei em meu sistema que nos ultimos dados voce estava muito euforica " +
                 "e de repente nao consegui mais te contatar. O que aconteceu?");
-        Thread.sleep(4000);
+
+        Thread.sleep(6000);
+
         System.out.println("Ei, espere um momento! Voce nao eh a Raquel! Onde ela esta? Passe o celular para ela " +
                 "IMEDIATAMENTE!!!!!");
+
+        Thread.sleep(1000);
 
         System.out.println("\n[A] = Claro que eu sou a Raquel, Lorem. Por que esta dizendo isso?");
         System.out.println("[B] = A Raquel nao esta, encontrei este celular na rua e nao vi ninguem por perto " +
@@ -200,10 +207,7 @@ public class Game {
 
         do {
             System.out.print(">");
-//            System.out.println("TESTE DA VARIAVEL ANTES <<<<< -" + decision + "-"); //CLEANUP
             decision = sc.nextLine();
-//            System.out.println("TESTE DA VARIAVEL DEPOIS <<<<< -" + decision + "-"); //CLEANUP
-
             if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equals("C") && !decision.equalsIgnoreCase("D")) {
                 System.err.println("Digite apenas \"A\", \"B\", \"C\" ou \"D\"!");
             }
