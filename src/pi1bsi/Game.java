@@ -23,8 +23,7 @@ public class Game {
         //BEGINNING
     }
 
-    // \\\\\\\\\\\\\\\\\\\ ********************** AREA DE CRIACAO DOS METODOS DE DECISAO *******************************///////////////
-
+    // \\\\\\\\\\\\\\\\\\\ ********************** AREA DE CRIACAO DOS METODOS DE DECISAO *******************************////////////////
     public static void startGame() throws InterruptedException {
         System.out.println("Voce acorda com o barulho do despertador para ir trabalhar, o que deseja fazer?");
         System.out.println("[A] =  Levantar\t\t\t[B] = Continuar dormindo");
@@ -47,7 +46,7 @@ public class Game {
                 System.out.println("[A] =  Levantar\t\t\t[B] = Continuar dormindo");
                 //codigo se continuar dormindo
                 ifLate++;
-            }
+              }
         }
     }
 
@@ -91,7 +90,7 @@ public class Game {
 
             if (decision.equalsIgnoreCase("a")) { // SE ESCOLHER A COM MOOD 1
                 System.out.print("Bom dia!! Prazer, meu nome eh ");
-                nameWithoutFormating = sc.next(); //FAZER O ESQUEMA DE ESCREVER COM LETRA MINUSCULA E SALVAR A PRIMEIRA MAIUSCULA
+                nameWithoutFormating = sc.nextLine(); //FAZER O ESQUEMA DE ESCREVER COM LETRA MINUSCULA E SALVAR A PRIMEIRA MAIUSCULA
                 nameLowerCase = nameWithoutFormating.toLowerCase();
                 nameMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));//reduzido para a funcao abaixo
 //                nameMain = StringUtils.capitalize(nameLowerCase);
@@ -101,7 +100,7 @@ public class Game {
 
             } else { //SE ESCOLHER B
                 System.out.print("Oi, meu nome eh ");
-                nameWithoutFormating = sc.next();
+                nameWithoutFormating = sc.nextLine();
                 nameLowerCase = nameWithoutFormating.toLowerCase();
                 nameMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
 //                nameMain = StringUtils.capitalize(nameLowerCase);
@@ -123,7 +122,7 @@ public class Game {
 
             if (decision.equalsIgnoreCase("a")) {
                 System.out.print("Oi, meu nome eh ");
-                nameWithoutFormating = sc.next();
+                nameWithoutFormating = sc.nextLine();
                 nameLowerCase = nameWithoutFormating.toLowerCase();
 //                nameMain = StringUtils.capitalize(nameLowerCase);
                 nameMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
@@ -131,7 +130,7 @@ public class Game {
 
             } else {
                 System.out.print("Me chamo ");
-                nameWithoutFormating = sc.next();
+                nameWithoutFormating = sc.nextLine();
                 nameLowerCase = nameWithoutFormating.toLowerCase();
 //                nameMain = StringUtils.capitalize(nameLowerCase);
                 nameMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
@@ -159,13 +158,10 @@ public class Game {
         System.out.println("\nO que voce deseja fazer?");
         Thread.sleep(400);
         System.out.println("[A] = Fazer a recuperacao do sistema\t\t[B] = Tentar achar outra maneira para nao resetar o celular");
-        decision = ""; //testando pra ver se o bug sai
-
 
         while (loop) { // loop pra ficar rodando enquanto ele nao formatar.
             do {
                 System.out.print(">");
-                decision = sc.nextLine();
                 decision = sc.nextLine();
                 if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B")) { // ESSE IF SERVE APENAS PARA ESCREVER O QUE O USUARIO DEVE FAZER
                     System.err.println("Digite apenas \"A\" ou \"B\"!");
@@ -208,7 +204,8 @@ public class Game {
         do {
             System.out.print(">");
             decision = sc.nextLine();
-            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equals("C") && !decision.equalsIgnoreCase("D")) {
+
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C") && !decision.equalsIgnoreCase("D")) {
                 System.err.println("Digite apenas \"A\", \"B\", \"C\" ou \"D\"!");
             }
         }
