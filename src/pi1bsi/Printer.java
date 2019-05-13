@@ -163,4 +163,16 @@ public class Printer {
         else
             Runtime.getRuntime().exec("clear");
     }
+
+    public static void printInventory() {
+        System.out.println("----SEU INVENTARIO----");
+        for (int i = 0; i < Game.inventory.length; i++) {
+
+            System.out.println((i + 1) + ". " + Game.inventory[i]);
+        }
+        System.out.println("----------------------");
+    }
 }
+
+
+

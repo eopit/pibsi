@@ -9,44 +9,94 @@ public class Game {
     static String nameMain;
     static String nameLowerCase;
     static int age;                      //NAO DEIXAR PRIVATE POIS USAREMOS EM OUTRAS CLASSES, COMO A PRINT
-    static boolean loop = true;
     static int mood = 0;
     static int ifLate = 0;
     static int intimacyRaquelWithMain = 0;
-    static String decision = "";
+    static int intimacyLorenWithMain = 0;
+    static String decision = "", objectDecision = "", trashItem = "";
+    static String[] inventory = new String[6];
 
     public static void main(String[] args) throws InterruptedException, IOException { // main com o Thread to sleep
 
         Printer.clearConsole();
-        Printer.printWatch();
+        Printer.printWatch(); //debug
+        makeInventory();
         startGame();
         //BEGINNING
     }
 
+
     // \\\\\\\\\\\\\\\\\\\ ********************** AREA DE CRIACAO DOS METODOS DE DECISAO *******************************////////////////
+
+    public static void makeInventory() throws InterruptedException { // CRIAÇÃO DO INVENTÁRIO
+
+        for (int i = 0; i < 6; i++) {
+            inventory[i] = "vazio"; //deixar vazio
+        }
+    }
+
+    private static boolean addInventory(String object) {
+        for (int i = 0; i < inventory.length; i++) { //adiciona o celular no inventario
+            if (inventory[i].equalsIgnoreCase("vazio")) {
+                inventory[i] = object;
+                System.out.println(object + " foi adicionado ao seu inventario");
+                return true; // senao ele vai colocar em todos
+            }
+        }
+        System.out.println("Seu inventario esta cheio.");
+        deleteItemIventory();
+        return false;
+    }
+
+    private static void deleteItemIventory() {
+        System.out.println("Deseja deletar algum item do seu inventario?");
+        Printer.printInventory();
+        System.out.println("[A] - Sim\t\t\t[B] - Nao");
+
+        do {
+            System.out.print(">");
+            objectDecision = sc.nextLine();
+            if (!objectDecision.equalsIgnoreCase("a") && !objectDecision.equalsIgnoreCase("b")) {
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+            }
+        } while (!objectDecision.equalsIgnoreCase("a") && !objectDecision.equalsIgnoreCase("b"));
+
+        if (objectDecision.equalsIgnoreCase("a")) {
+            System.out.println("Digite o nome do item que deseja jogar fora:");
+            trashItem = sc.nextLine();
+
+            for (int i = 0; i < inventory.length; i++) {
+                if (trashItem.equalsIgnoreCase(inventory[i])) {
+                    inventory[i] = "";
+                }
+            }
+
+        } else {
+            System.out.println("Voce nao jogou nenhum item fora.");
+            return;
+        }
+    }
+
     public static void startGame() throws InterruptedException {
         System.out.println("Voce acorda com o barulho do despertador para ir trabalhar, o que deseja fazer?");
         System.out.println("[A] =  Levantar\t\t\t[B] = Continuar dormindo");
 
-        while (loop) {
-            do {
-                System.out.print(">");
-                decision = sc.nextLine();
-                if (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b")) { // ESSE IF SERVE APENAS PARA ESCREVER O QUE O USUARIO DEVE FAZER
-                    System.err.println("Digite apenas \"A\" ou \"B\"!");
-                }
-            } while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b")); //enquanto nao acertar as palavras ele vai continaur roadndo
+        do {
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b")) { // ESSE IF SERVE APENAS PARA ESCREVER O QUE O USUARIO DEVE FAZER
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+            }
+        } while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b")); //enquanto nao acertar as palavras ele vai continaur roadndo
 
-            if (decision.equalsIgnoreCase("a")) {
-                loop = false;
-                wakeUpBed(); //vai ter que passar por esse alguma hora, senão o jogo não começa
-                // codigo se for levantar
-            } else {
-                System.out.println("Voce dormiu mais um pouco. O que deseja fazer agora?");
-                System.out.println("[A] =  Levantar\t\t\t[B] = Continuar dormindo");
-                //codigo se continuar dormindo
-                ifLate++;
-              }
+        if (decision.equalsIgnoreCase("a")) {
+            wakeUpBed(); //vai ter que passar por esse alguma hora, senão o jogo não começa
+            // codigo se for levantar
+        } else {
+            System.out.println("Voce dormiu mais um pouco. O que deseja fazer agora?");
+            System.out.println("[A] =  Levantar\t\t\t[B] = Continuar dormindo");
+            //codigo se continuar dormindo
+            ifLate++;
         }
     }
 
@@ -143,40 +193,43 @@ public class Game {
 
     public static void searchInPhone() throws InterruptedException {
         Thread.sleep(1000);
-        loop = true;
         System.out.println("\n\nApos o termino do expediente, voce pega o trem para voltar para o seu apartamento e " +
                 "durante o percurso voce se depara com um celular jogado na rua. Voce olha aos arredores para ver se " +
                 "o dono nao esta por perto, porem nao encontra ninguem. Entao voce pega o celular e leva para o seu " +
                 "apartamento.");
-        Thread.sleep(10000); //10s
+        addInventory("Celular");
+
         System.out.println("\nQuando chega em casa, voce liga o celular e se depara com uma tela de bloqueio por senha, " +
                 "nada fora do comum. Tentando descobrir alguma maneira de burlar a senha, voce ve que no plano de " +
                 "fundo tem uma garota com um cachorro. Ao deslizar o dedo sobre a tela, o plano de fundo muda e o celular " +
                 "trava e pede para seja feito uma recuperacao do sistema.");
+        Thread.sleep(5000);
 
 
         System.out.println("\nO que voce deseja fazer?");
         Thread.sleep(400);
-        System.out.println("[A] = Fazer a recuperacao do sistema\t\t[B] = Tentar achar outra maneira para nao resetar o celular");
+        System.out.println("[A] = Fazer a recuperacao do sistema\t\t[B] = Tentar achar outra maneira para nao resetar o celular" +
+                " \t\t[C] = Olhar o inventario");
 
-        while (loop) { // loop pra ficar rodando enquanto ele nao formatar.
-            do {
-                System.out.print(">");
-                decision = sc.nextLine();
-                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B")) { // ESSE IF SERVE APENAS PARA ESCREVER O QUE O USUARIO DEVE FAZER
-                    System.err.println("Digite apenas \"A\" ou \"B\"!");
-                }
+        do {
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C"))
+                System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
+            if (decision.equalsIgnoreCase("C")) {
+                Printer.printInventory();
+                System.out.println("[A] = Fazer a recuperacao do sistema\t\t[B] = Tentar achar outra maneira para nao resetar o celular" +
+                        " \t\t[C] = Olhar o inventario");
             }
-            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
 
-            if (decision.equalsIgnoreCase("a")) { //escolheu A
-                loop = false;
-                phoneReset();
+        if (decision.equalsIgnoreCase("a")) { //escolheu A
+            phoneReset();
 
-            } else { //escolheu B
-                System.out.println("Voce tenta achar outra maneira porem nao consegue.");
-                System.out.println("[A] = Fazer a recuperacao do sistema\t\t[B] = Tentar achar outra maneira para nao resetar o celular");
-            }
+        } else { //escolheu B
+            System.out.println("Voce tenta achar outra maneira porem nao consegue.");
+            System.out.println("[A] = Fazer a recuperacao do sistema\t\t[B] = Tentar achar outra maneira para nao resetar o celular");
         }
     }
 
@@ -214,16 +267,31 @@ public class Game {
                 !decision.equalsIgnoreCase("C") && !decision.equalsIgnoreCase("D"));
 
         if (decision.equalsIgnoreCase("a")) { //SE ESCOLHER A
-            System.out.println("escolheu a");
+            imRaquel();
         } else if (decision.equalsIgnoreCase("b")) { //SE ESCOLHER B
-            System.out.println("escolheu b");
+            imNotRaquel();
         } else if (decision.equalsIgnoreCase("c")) { //SE ESCOLHER C
-            System.out.println("escolheu c");
+            whoAreRaquel();
         } else if (decision.equalsIgnoreCase("d")) { // SE ESCOLEHR D
-            System.out.println("escolheu d");
+            whoAreYou();
         }
     }
+
+    public static void imRaquel() {
+        System.out.println("Raquel, o que aconteceu com voce no dia 26? Notei que voce estava em panico");
+
+
+    }
+
+    public static void imNotRaquel() {
+
+    }
+
+    public static void whoAreRaquel() {
+
+    }
+
+    public static void whoAreYou() {
+
+    }
 }
-
-
-
