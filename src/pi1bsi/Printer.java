@@ -172,6 +172,33 @@ public class Printer {
         }
         System.out.println("----------------------");
     }
+
+
+
+
+    public static void printInventoryWithAction() {
+        System.out.println("----SEU INVENTARIO----");
+        for (int i = 0; i < Game.inventory.length; i++) {
+
+            System.out.println((i + 1) + ". " + Game.inventory[i]);
+        }
+        System.out.println("----------------------");
+
+        System.out.println("O que deseja fazer?\n[A] = Jogar algum item fora\t\t\t[B] = Voltar");
+
+        do {
+            System.out.print(">");
+            Game.decision = Game.sc.nextLine();
+            if (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b")) {
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+            }
+
+        } while (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b") );
+
+        if (Game.decision.equalsIgnoreCase("a")) {
+            Game.deleteItemInventory();
+        }
+    }
 }
 
 
