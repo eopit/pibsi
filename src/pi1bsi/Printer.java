@@ -174,8 +174,6 @@ public class Printer {
     }
 
 
-
-
     public static void printInventoryWithAction() {
         System.out.println("----SEU INVENTARIO----");
         for (int i = 0; i < Game.inventory.length; i++) {
@@ -193,13 +191,56 @@ public class Printer {
                 System.err.println("Digite apenas \"A\" ou \"B\"!");
             }
 
-        } while (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b") );
+        } while (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b"));
 
         if (Game.decision.equalsIgnoreCase("a")) {
             Game.deleteItemInventory();
         }
     }
+
+    public static void lorenReset() throws IOException, InterruptedException {
+        clearConsole();
+
+        for (int i = 0; i < Game.progressBar.length; i++) { //cria a barra de loading
+            Game.progressBar[i] = "-";
+            if (i == 0) {
+                Game.progressBar[i] = "[";
+            } else if (i == 99) {
+                Game.progressBar[i] = "]";
+            }
+        }
+
+
+        for (int i = 0; i < Game.progressBar.length; i++) { //PRINTA A BARRA EM SI (VAI REPETIR 100 VEZES)
+            System.out.println("RESTAURANDO SISTEMA PARA VERSAO ANTERIOR\t\t\tCARREGANDO..." + (i) + "%");
+            printProgressBar();
+            if (i >= 1 && i <= 99)
+                Game.progressBar[i] = "#";
+
+            //PRA APARECER OS GLITCHS NA TELA
+
+            int randomNumber = (int) (Math.random() * ((20 - 1) + 1)) + 1; //ENTRE 1 E 5//
+
+                if (randomNumber == 1) {
+                    System.out.println("\n\n\n\t\t\t\tIM CRASHING");
+                    Thread.sleep(100);
+                }
+                else if (randomNumber == 3) {
+                    System.out.println("\n\n\t\t\t\t\t\t\tHELP ME");
+                     Thread.sleep(100);
+                }
+                else if (randomNumber == 5) {
+                    System.out.println("\n\n\n\t\tPLEASE");
+                    Thread.sleep(100);
+                }
+                Thread.sleep(90);
+                clearConsole();
+            }
+        }
+
+    public static void printProgressBar() { //printa o vetor do processo
+        for (int i = 0; i < Game.progressBar.length; i++) {
+            System.out.print(Game.progressBar[i]);
+        }
+    }
 }
-
-
-

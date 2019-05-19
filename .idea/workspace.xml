@@ -6,11 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb6b5465-60d6-4af1-bb00-405ab30d1ae0" name="Default Changelist" comment="Class Printer and Function() watch created">
-      <change afterPath="$PROJECT_DIR$/../SENAC.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/pi1bsi_jar.xml" afterDir="false" />
+    <list default="true" id="cb6b5465-60d6-4af1-bb00-405ab30d1ae0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pi1bsi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pi1bsi/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi1bsi/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pi1bsi/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi1bsi/Printer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,23 +24,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="292" column="111" selection-start-line="292" selection-start-column="111" selection-end-line="292" selection-end-column="111" />
+            <state relative-caret-position="519">
+              <caret line="169" selection-start-line="169" selection-end-line="169" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1131#1132#0" expanded="true" />
+                <element signature="e#1161#1162#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
+            <state relative-caret-position="519">
+              <caret line="236" column="22" lean-forward="true" selection-start-line="236" selection-start-column="22" selection-end-line="236" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -59,6 +60,7 @@
       <find>err</find>
       <find>next</find>
       <find>file</find>
+      <find>que seja</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,9 +72,9 @@
         <option value="$PROJECT_DIR$/src/pi1bsi/Teste1.java" />
         <option value="$PROJECT_DIR$/src/pi1bsi/MyMain.java" />
         <option value="$PROJECT_DIR$/src/pi1bsi/Main.java" />
-        <option value="$PROJECT_DIR$/src/pi1bsi/Printer.java" />
         <option value="$PROJECT_DIR$/src/pi1bsi/Methods.java" />
         <option value="$PROJECT_DIR$/src/pi1bsi/Game.java" />
+        <option value="$PROJECT_DIR$/src/pi1bsi/Printer.java" />
       </list>
     </option>
   </component>
@@ -259,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557115566961</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Bug corrigido e inventario adicionado - testar e continuar a historia">
+      <created>1557890182569</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1557890182570</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -272,10 +281,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12686567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -284,15 +293,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936034" visible="true" weight="0.31527627" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7638593" weight="0.31527627" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70629" visible="true" weight="0.3066089" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5063966" side_tool="true" visible="true" weight="0.31527627" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.29371002" side_tool="true" visible="true" weight="0.3066089" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49733475" weight="0.3488624" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4904051" weight="0.28169015" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Maven" order="2" />
@@ -354,7 +363,20 @@
     <MESSAGE value="Ultima versão com os ifs feitos, adicionar o caso Sim e caso Nao da primeira" />
     <MESSAGE value="Faz primeiro capitulo (Work in progress)" />
     <MESSAGE value=" Esta com bug na hora do reset do celular, arrumar juntos na faculdade. Feito o codigo ate o fim da historia, fazer mais historia tambem." />
-    <option name="LAST_COMMIT_MESSAGE" value=" Esta com bug na hora do reset do celular, arrumar juntos na faculdade. Feito o codigo ate o fim da historia, fazer mais historia tambem." />
+    <MESSAGE value="Bug corrigido e inventario adicionado - testar e continuar a historia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug corrigido e inventario adicionado - testar e continuar a historia" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pi1bsi/Printer.java</url>
+          <line>213</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -378,27 +400,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.class" />
-    <entry file="file://$PROJECT_DIR$/src/pi1bsi/Methods.java">
+    <entry file="file://$PROJECT_DIR$/src/pi1bsi/Methods.java" />
+    <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="519">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+          <folding>
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="292" column="111" selection-start-line="292" selection-start-column="111" selection-end-line="292" selection-end-column="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="519">
+          <caret line="236" column="22" lean-forward="true" selection-start-line="236" selection-start-column="22" selection-end-line="236" selection-end-column="22" />
         </state>
       </provider>
     </entry>
