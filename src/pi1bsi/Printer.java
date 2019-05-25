@@ -182,19 +182,26 @@ public class Printer {
         }
         System.out.println("----------------------");
 
-        System.out.println("O que deseja fazer?\n[A] = Jogar algum item fora\t\t\t[B] = Voltar");
+        System.out.println("O que deseja fazer?\n[A] = Jogar algum item fora\t\t\t[B] = Usar algum item\t\t\t [C] = Voltar");
 
         do {
             System.out.print(">");
             Game.decision = Game.sc.nextLine();
-            if (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b")) {
-                System.err.println("Digite apenas \"A\" ou \"B\"!");
+            if (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b") && !Game.decision.equalsIgnoreCase("c")) {
+                System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
             }
 
-        } while (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b"));
+        } while (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b") && !Game.decision.equalsIgnoreCase("c"));
 
-        if (Game.decision.equalsIgnoreCase("a")) {
+        if (Game.decision.equalsIgnoreCase("a")) { //se quiser deletar
             Game.deleteItemInventory();
+
+        } else if (Game.decision.equalsIgnoreCase("b")) { //se quiser usar
+            if (!Game.canUseItem) {
+                System.out.println("Voce nao pode utilizar nenhum item agora!\n");
+            } else {
+                Game.useItemInventory();
+            }
         }
     }
 
@@ -219,28 +226,87 @@ public class Printer {
 
             //PRA APARECER OS GLITCHS NA TELA
 
-            int randomNumber = (int) (Math.random() * ((20 - 1) + 1)) + 1; //ENTRE 1 E 5//
+            int randomNumber = (int) (Math.random() * ((30 - 1) + 1)) + 1; //ENTRE 1 E 30//
 
-                if (randomNumber == 1) {
-                    System.out.println("\n\n\n\t\t\t\tIM CRASHING");
-                    Thread.sleep(100);
-                }
-                else if (randomNumber == 3) {
-                    System.out.println("\n\n\t\t\t\t\t\t\tHELP ME");
-                     Thread.sleep(100);
-                }
-                else if (randomNumber == 5) {
-                    System.out.println("\n\n\n\t\tPLEASE");
-                    Thread.sleep(100);
-                }
+            if (randomNumber == 1 || randomNumber == 2) {
+                System.out.println("\n\n\n\t\t\t\tIM CRASHING");
+                Thread.sleep(80);
+            } else if (randomNumber == 3) {
+                System.out.println("\n\n\t\t\t\t\t\t\tHELP ME");
                 Thread.sleep(90);
-                clearConsole();
+            } else if (randomNumber == 5) {
+                System.out.println("\n\n\n\t\tPLEASE");
+                Thread.sleep(90);
             }
+            Thread.sleep(60);
+            clearConsole();
         }
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
+        Thread.sleep(300);
+        clearConsole();
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
+        Thread.sleep(300);
+        clearConsole();
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA...");
+        Thread.sleep(300);
+        clearConsole();
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
+        Thread.sleep(300);
+        clearConsole();
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA..");
+        Thread.sleep(300);
+        clearConsole();
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA...");
+        Thread.sleep(300);
+        clearConsole();
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
+        Thread.sleep(300);
+        clearConsole();
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA..");
+        Thread.sleep(300);
+        clearConsole();
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA...");
+        Thread.sleep(800);
+        clearConsole();
+    }
 
     public static void printProgressBar() { //printa o vetor do processo
         for (int i = 0; i < Game.progressBar.length; i++) {
             System.out.print(Game.progressBar[i]);
         }
     }
+
+
+    public static void crashedContent() throws IOException, InterruptedException {
+        clearConsole();
+        System.out.println("|-----------------------------------|");
+        System.out.println("|VIVO           08:40PM         12% |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|   myPassword.txt                  |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("| 01101100011011110110101101101001  |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|                                   |");
+        System.out.println("|----------------- O ---------------|");
+        System.out.println("|-----------------------------------|");
+    }
 }
+
