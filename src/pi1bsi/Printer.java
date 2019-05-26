@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Printer {
 
     public static void menu() {
-        System.out.println("*********************************************************");
+        System.out.println("*******************************************************");
         System.out.println("");
         System.out.println("888      .d88888b.  8888888b.  8888888888 888b     d888 ");
         System.out.println("888     d88P\" \"Y88b 888   Y88b 888        8888b   d8888 ");
@@ -16,7 +16,7 @@ public class Printer {
         System.out.println("888     Y88b. .d88P 888  T88b  888        888   \"   888 ");
         System.out.println("88888888 \"Y88888P\"  888   T88b 8888888888 888       888");
         System.out.println("");
-        System.out.println("*********************************************************");
+        System.out.println("*******************************************************");
         System.out.println("\nversion 2.0\n\n\n");
 
         System.out.println("[A] - Novo jogo");
@@ -29,7 +29,7 @@ public class Printer {
                 System.out.print(">");
                 Game.decision = Game.sc.nextLine();
                 if (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b") && !Game.decision.equalsIgnoreCase("c")) { // ESSE IF SERVE APENAS PARA ESCREVER O QUE O USUARIO DEVE FAZER
-                    System.err.println("Digite apenas \"A\", \"B\"! ou \"C\"");
+                    System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
                 }
             } while (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b") && !Game.decision.equalsIgnoreCase("c")); //enquanto nao acertar as palavras ele vai continaur roadndo
 
@@ -40,7 +40,7 @@ public class Printer {
                 System.out.println("\n\nJogo desenvolvido por:\n");
                 System.out.println("Gabryelle Silva Santos");
                 System.out.println("Pedro Henrique Barricelli Martins");
-                System.out.println("\nDigite enter para voltar");
+                System.out.println("Aperte enter para continuar...");
                 Game.sc.nextLine();
                 System.out.println("[A] - Novo jogo");
                 System.out.println("[B] - Creditos");
@@ -267,7 +267,7 @@ public class Printer {
 
 
         for (int i = 0; i < Game.progressBar.length; i++) { //PRINTA A BARRA EM SI (VAI REPETIR 100 VEZES)
-            System.out.println("RESTAURANDO SISTEMA PARA VERSAO ANTERIOR\t\t\tCARREGANDO..." + (i) + "%");
+            System.out.println("RESTAURANDO SISTEMA PARA VERSAO ANTERIOR\t\t\t\tCARREGANDO..." + (i) + "%");
             printProgressBar();
             if (i >= 1 && i <= 99)
                 Game.progressBar[i] = "#";
@@ -353,8 +353,51 @@ public class Printer {
         System.out.println("|                                   |");
         System.out.println("|                                   |");
         System.out.println("|                                   |");
-        System.out.println("|----------------- O ---------------|");
+        System.out.println("|---------------- O ----------------|");
         System.out.println("|-----------------------------------|");
+    }
+
+    public static void filesRestoring() throws IOException, InterruptedException {
+        clearConsole();
+        System.out.println(".");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println("..");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println("...");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println(".");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println("..");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println("...");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println(".");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println("..");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println("...");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println(".");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println("..");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println("...");
+        Thread.sleep(600);
+        clearConsole();
+        System.out.println(".");
+        Thread.sleep(600);
+        clearConsole();
     }
 }
 

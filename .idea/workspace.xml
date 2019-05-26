@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6b5465-60d6-4af1-bb00-405ab30d1ae0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pi1bsi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pi1bsi/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi1bsi/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pi1bsi/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi1bsi/Printer.java" afterDir="false" />
@@ -27,12 +26,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="714">
+              <caret line="797" lean-forward="true" selection-start-line="797" selection-end-line="797" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1067#1068#0" expanded="true" />
-                <element signature="e#1097#1098#0" expanded="true" />
+                <element signature="e#2338#2339#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="312" lean-forward="true" selection-start-line="312" selection-end-line="312" />
+            <state relative-caret-position="833">
+              <caret line="341" column="32" selection-start-line="341" selection-start-column="32" selection-end-line="341" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -66,7 +64,25 @@
       <find>loren</find>
       <find>decodif</find>
       <find>envie</find>
+      <find>qualquer tecla</find>
+      <find>tips</find>
+      <find>verifyTips</find>
+      <find>end</find>
+      <find>imagem encontr</find>
+      <find>binario</find>
+      <find>sistema</find>
+      <find>reiniciando</find>
+      <find>tip</find>
+      <find>consegue ver isso</find>
+      <find>eu consegui res</find>
+      <find>nome</find>
       <find>Thread.sleep</find>
+      <find>filesrestored</find>
+      <find>vou tentar</find>
+      <find>consegui recuperar</find>
+      <find>temos</find>
+      <find>Consegui recuperar</find>
+      <find>enter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -79,8 +95,8 @@
         <option value="$PROJECT_DIR$/src/pi1bsi/MyMain.java" />
         <option value="$PROJECT_DIR$/src/pi1bsi/Main.java" />
         <option value="$PROJECT_DIR$/src/pi1bsi/Methods.java" />
-        <option value="$PROJECT_DIR$/src/pi1bsi/Printer.java" />
         <option value="$PROJECT_DIR$/src/pi1bsi/Game.java" />
+        <option value="$PROJECT_DIR$/src/pi1bsi/Printer.java" />
       </list>
     </option>
   </component>
@@ -281,7 +297,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558248501716</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Debug method com historia 1 quase concluida">
+      <created>1558822834322</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1558822834322</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Menu feito, continuar historia.">
+      <created>1558831158116</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1558831158116</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -310,10 +340,10 @@
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70629" weight="0.3066089" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.29371002" side_tool="true" visible="true" weight="0.3066089" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49733475" weight="0.3488624" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4904051" weight="0.28169015" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50373137" side_tool="true" weight="0.3488624" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49626866" weight="0.3488624" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48987207" weight="0.28169015" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
@@ -377,19 +407,9 @@
     <MESSAGE value="Faz primeiro capitulo (Work in progress)" />
     <MESSAGE value=" Esta com bug na hora do reset do celular, arrumar juntos na faculdade. Feito o codigo ate o fim da historia, fazer mais historia tambem." />
     <MESSAGE value="Bug corrigido e inventario adicionado - testar e continuar a historia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug corrigido e inventario adicionado - testar e continuar a historia" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pi1bsi/Printer.java</url>
-          <line>220</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Debug method com historia 1 quase concluida" />
+    <MESSAGE value="Menu feito, continuar historia." />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu feito, continuar historia." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -412,7 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.class" />
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Methods.java" />
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.class">
       <provider selected="true" editor-type-id="text-editor" />
@@ -424,21 +443,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="312" lean-forward="true" selection-start-line="312" selection-end-line="312" />
+        <state relative-caret-position="833">
+          <caret line="341" column="32" selection-start-line="341" selection-start-column="32" selection-end-line="341" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="714">
+          <caret line="797" lean-forward="true" selection-start-line="797" selection-end-line="797" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#2338#2339#0" expanded="true" />
           </folding>
         </state>
       </provider>

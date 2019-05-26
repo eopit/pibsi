@@ -7,9 +7,11 @@ import java.util.Scanner;
 public class Game {
     static Scanner sc = new Scanner(System.in); ////NAO DEIXAR PRIVATE POIS USAREMOS EM OUTRAS CLASSES, COMO A PRINT
     static boolean loop = true;
-    static String nameWithoutFormating;   //serve para pegar o primeiro nome
-    static String nameMain;               //nome real utilizado depois de formatar
-    static String nameLowerCase;          //formatar
+    static String nameWithoutFormating;   //PEGA O NOME DIGITADO
+    static String nameFullyMain;          //nome formatado porem completo,
+    static String nameLowerCase;          //tudo lower case pra deixar a primeira letra maiuscula
+    static String nameMain;               //pega sempre o primeiro nome
+    static String nameArray[];
     static int age = 0;
     static int mood = 0;
     static int ifLate = 0;
@@ -21,7 +23,7 @@ public class Game {
     static String[] progressBar = new String[100];
     static boolean canUseItem;
     static String binaryCode;
-    static boolean debug = true; // DEIXAR DESATIVADO NO PROGRAMA FINAL < REMOVE TODOS OS DELAYS DA MAIN
+    static boolean debug = false; // DEIXAR DESATIVADO NO PROGRAMA FINAL < REMOVE TODOS OS DELAYS DA MAIN
 
     public static void main(String[] args) throws InterruptedException, IOException { // main com o Thread to sleep
         Printer.clearConsole();
@@ -289,7 +291,10 @@ public class Game {
                 nameWithoutFormating = sc.nextLine();
 
                 nameLowerCase = nameWithoutFormating.toLowerCase();
-                nameMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
+                nameFullyMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
+                nameArray = nameFullyMain.split(" ", 2);
+                nameMain = nameArray[0];
+
 
                 System.out.println("Voce vai amar essa empresa, trabalho aqui ha anos. Nos ate podemos ir almocar juntos hoje...");
                 System.out.println("\n-Claro! Eu topo!!!");
@@ -300,7 +305,9 @@ public class Game {
                 nameWithoutFormating = sc.nextLine();
 
                 nameLowerCase = nameWithoutFormating.toLowerCase();
-                nameMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
+                nameFullyMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
+                nameArray = nameFullyMain.split(" ", 2);
+                nameMain = nameArray[0];
 
                 System.out.println("Prazer, seja bem vinda.");
                 System.out.println("-Muito obrigada!");
@@ -325,7 +332,9 @@ public class Game {
                 nameWithoutFormating = sc.nextLine();
 
                 nameLowerCase = nameWithoutFormating.toLowerCase();
-                nameMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
+                nameFullyMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
+                nameArray = nameFullyMain.split(" ", 2);
+                nameMain = nameArray[0];
 
                 System.out.println("Prazer, seja bem vinda.");
                 intimacyRaquelWithMain++;
@@ -335,7 +344,9 @@ public class Game {
                 nameWithoutFormating = sc.nextLine();
 
                 nameLowerCase = nameWithoutFormating.toLowerCase();
-                nameMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
+                nameFullyMain = ((nameLowerCase.substring(0, 1).toUpperCase()) + nameLowerCase.substring(1));
+                nameArray = nameFullyMain.split(" ", 2);
+                nameMain = nameArray[0];
 
                 System.out.println("Raquel, nao estou em um bom dia. Outra hora conversamos.");
                 System.out.println("-Tudo bem, me desculpe.");
@@ -458,7 +469,7 @@ public class Game {
     }
 
     public static void bringItBackToChris() throws InterruptedException, IOException {
-        System.out.println("\nVoce precisa devolver esse celular para a Chris o quanto antes.");
+        System.out.println("Voce precisa devolver esse celular para a Chris o quanto antes.");
         System.out.println("[A] - Mas eu nao a conheco\t\t[B] - Eu nao a conheco mas se precisar de algo eu topo\t\t[C] - Quem eh voce?\t\t [D] - Olhar o inventario");
 
 
@@ -524,7 +535,7 @@ public class Game {
             System.out.println("Vou tentar recuperar!");
         else
             System.out.println("Eu preciso! Quero saber aonde a Chis esta! Eu vou fazer de qualquer jeito!");
-        delayMethod(4500);
+        delayMethod(3000);
 
         Printer.lorenReset();
         crashedLoren();
@@ -592,7 +603,7 @@ public class Game {
     }
 
 
-    public static void findPassword() throws InterruptedException {
+    public static void findPassword() throws InterruptedException, IOException {
         canUseItem = true;
         delayMethod(1200);
         loop = true;
@@ -617,9 +628,21 @@ public class Game {
                 passwordSended = sc.nextLine();
 
                 if (passwordSended.equals(correctPassword)) { //se a senha for certa, ela recupera os arquivos
-                    System.out.println("acertou");
-                    endGame();
+                    delayMethod(600);
+                    System.out.println("Espera um pouco, vou tentar com essa senha.");
+                    delayMethod(4000);
+                    System.out.println("Perfeito!! Consegui recuperar!");
+                    delayMethod(800);
+                    System.out.println("Vou colocar para recuperar, agora eh so esperar e assim que estiver pronto te retorno com os arquivos, beleza?");
+                    System.out.println("Aperte enter para continuar...");
+                    sc.nextLine();
+                    filesRestored();
                     //rodar um outro metodo falando que vai recuperar os arquivos e continuar a historia
+                } else {
+                    delayMethod(600);
+                    System.out.println("Espera um pouco, vou tentar com essa senha.");
+                    delayMethod(4000);
+                    System.out.println("Droga! Acho que essa eh a senha errada. Consegue achar outra?");
                 }
 
 
@@ -634,7 +657,142 @@ public class Game {
             }
             findPassword(); //pra retornar sempre que nao colocar as coisas certas
         }
-        endGame();
+    }
+
+    //COMECO DO CAPITULO 2
+
+    public static void filesRestored() throws IOException, InterruptedException {
+        Printer.filesRestoring();
+        System.out.println("Pronto, consegui recuperar todos os arquivos. Pelo menos eu acho hehe.");
+        delayMethod(600);
+        System.out.println("Veja as opcoes que consegui recuperar:");
+        allArchives();
+
+    }
+
+    public static void allArchives() throws InterruptedException {
+        loop = true;
+        while (loop) {
+            do {
+                System.out.println("O que gostaria de investigar?\n");
+                System.out.println("[A] - Mensagens\n[B] - E-mail\n[C] - Galeria\n[D] - Musicas\n[E] - Bloco de notas");
+                System.out.print(">");
+                decision = sc.nextLine();
+
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C") && !decision.equalsIgnoreCase("D") && !decision.equalsIgnoreCase("E"))
+                    System.err.println("Digite apenas \"A\", \"B\", \"C\", \"D\" ou \"E\"!");
+
+            }
+            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c") && !decision.equalsIgnoreCase("d") && !decision.equalsIgnoreCase("e"));
+
+            if (decision.equalsIgnoreCase("a")) { //se escolher mensagens
+
+                System.out.println("\nTemos algumas conversas disponiveis aqui. Qual voce quer ver?");
+                messages();
+
+            } else if (decision.equalsIgnoreCase("b")) { //se escolher e-mail
+
+            } else if (decision.equalsIgnoreCase("c")) { //se escolher galeria
+
+            } else if (decision.equalsIgnoreCase("d")) { //se escolher musicas
+
+            } else if (decision.equalsIgnoreCase("e")) { //se escolher bloco de notas
+
+            }
+            allArchives(); //se nao for nenhum dos outros
+        }
+    }
+
+    public static void messages() throws InterruptedException {
+        int conversationNumber = 0; //conta qnts conversas ele viu
+
+        while (conversationNumber < 3) {
+            do {
+                System.out.println("\n\tEscolha uma conversa");
+                System.out.println("[A] - Robert");
+                System.out.println("[B] - Lilian");
+                System.out.println("[C] - Arthur");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C"))
+                    System.err.println("Digite apenas \"A\", \"B\" ou \"C\"");
+
+            }
+            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
+
+            if (decision.equalsIgnoreCase("a")) { //robert
+                System.out.println("\t\t\n24 de abril de 2019 01:58AM\n\n");
+                System.out.println("\tRobert - Amor, atende o telefone...");
+                System.out.println("\tRobert - Por favor");
+                System.out.println("\tRobert - Fala comigo, Chris");
+                System.out.println("\tRobert - Vamos, amor");
+                System.out.println("\tRobert - Voce que mexeu no meu celular sem a minha permissao");
+                System.out.println("\tRobert - Eu posso explicar.");
+                System.out.println("\t...\n");
+
+                conversationNumber++;
+
+                System.out.println("Aperte enter para continuar...");
+                sc.nextLine();
+
+            } else if (decision.equalsIgnoreCase("b")) { //lilian
+                System.out.println("\t\t\n12 de abril de 2019 3:42PM\n\n");
+                System.out.println("\tLilian - Oi amiga, tudo bem?");
+                System.out.println("\tChris - Oiiii\n\tChris - Tudo e com voce?");
+                System.out.println("\tLilian - Estou bem tambem\n\tLilian - Deixa eu te perguntar. Voce ja teve curiosidade de ficar com alguma menina?");
+                System.out.println("\tChris - Nao, so teria se a garota fosse o Robert hahahaa");
+                System.out.println("\tLilian - Eu acho que ele nao te merece...\n\tLilian - Nao confio nele.");
+                System.out.println("\tChris - Nao comeca, amiga. Eu estou bem com ele agora.");
+                System.out.println("\t...");
+                delayMethod(600);
+                System.out.println("\t\t\n23 de abril de 2019 00:36AM\n\n");
+                System.out.println("\tLilian - Eu sabia que ele nao prestava! Voce merece mais");
+                System.out.println("\tLilian - Queria te contar uma coisa... Acho que estou apaixonada");
+                System.out.println("\tLilian - Eu gosto de voce, Chris. Fica comigo. Eu vou te fazer feliz, muito mais do que voce pode imaginar.");
+                System.out.println("\tLilian - Eu estou apaixonada por voce, eu nunca senti algo tao genuino por alguem. Me da uma chance.");
+                System.out.println("\tLilian - Eu quero passar o resto da minha vida com voce! Nao consigo ver um futuro sem voce...");
+                System.out.println("\tLilian - Chris?");
+                System.out.println("\tLilian - ???");
+                System.out.println("\t...");
+
+                conversationNumber++;
+
+                System.out.println("Aperte enter para continuar...");
+                sc.nextLine();
+
+            } else if (decision.equalsIgnoreCase("c")) { //arthur
+                System.out.println("FALTA COLOCAR");
+                //conversa aqui
+
+                conversationNumber++;
+                System.out.println("Aperte enter para continuar...");
+                sc.nextLine();
+            }
+        }
+
+        delayMethod(1000);
+        System.out.println("Conseguiu descobrir alguma coisa??");
+        do {
+            System.out.println("[A] - Ja fazem dias que ela nao conversa com a Lilian");
+            System.out.println("[B] - Ela brigou com o namorado e nao responde a mensagem ha dias. Provalvemente foi traicao.");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"");
+
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        delayMethod(800);
+        System.out.println("Hmmmm...");
+        delayMethod(1300);
+        System.out.println("Essas informacoes sao boas porem nao eh o que precisamos. Veja se consegue mais algo.");
+        delayMethod(500);
+        allArchives();
     }
 }
 //ADICIONAR ENDGAME(); NO FINAL DO PROGRAMA!! << SENAO VAI RETORNAR TODAS AS FUNCOES
