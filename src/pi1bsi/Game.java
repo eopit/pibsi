@@ -13,6 +13,7 @@ public class Game {
     static int age = 0;
     static int mood = 0;
     static int ifLate = 0;
+    static int tips = 3;
     static int intimacyRaquelWithMain = 0;
     static int intimacyLorenWithMain = 0;
     static String decision = "", trashItem = "", useItem = "";
@@ -20,27 +21,47 @@ public class Game {
     static String[] progressBar = new String[100];
     static boolean canUseItem;
     static String binaryCode;
-    static boolean debug = true;
+    static boolean debug = true; // DEIXAR DESATIVADO NO PROGRAMA FINAL < REMOVE TODOS OS DELAYS DA MAIN
 
+    public static void main(String[] args) throws InterruptedException, IOException { // main com o Thread to sleep
+        Printer.clearConsole();
 
-    private static void delayMethod (int delay) throws InterruptedException {
+        Printer.menu(); //RODAR O MENU AQUI qnd fizer <<<<
+
+        Printer.clearConsole(); //limpa pra deixar so o relogio
+
+        Printer.printWatch(); //printa o relogio do inicio do jogo
+
+        makeInventory(); //cria o inventario
+
+        loop = true;
+        startGame(); //comeca o primeiro metodo do jogo
+    }
+
+    // \\\\\\\\\\\\\\\\\\\ ********************** AREA DE CRIACAO DOS METODOS DE DECISAO *******************************////////////////
+
+    private static void delayMethod(int delay) throws InterruptedException {
         if (!debug) {
             Thread.sleep(delay);
         }
     }
 
-
-    public static void main(String[] args) throws InterruptedException, IOException { // main com o Thread to sleep
-        System.out.println("Aperte enter para comecar");
-        sc.nextLine();
-        Printer.clearConsole();
-        Printer.printWatch(); //DEIXAR ATIVO
-        makeInventory();
-        startGame();
+    public static boolean verifyTips() {
+        if (tips > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    // \\\\\\\\\\\\\\\\\\\ ********************** AREA DE CRIACAO DOS METODOS DE DECISAO *******************************////////////////
-
+    public static void useTips(String tipText) {
+        if (verifyTips()) {
+            System.out.println(tipText);
+            tips--;
+        } else {
+            System.out.println("Voce nao tem mais dicas disponiveis.");
+        }
+    }
 
     public static void endGame() {
         System.exit(1);
@@ -125,6 +146,7 @@ public class Game {
 
                             if (binaryCode.matches("^[0-1]+$")) {
                                 loop = false;
+                                System.out.println("A palavra convertida eh:\n");
                                 StringBuilder sb = new StringBuilder(); // guardar os char
                                 Arrays.stream( //  cria um stream
                                         binaryCode.split("(?<=\\G.{8})") // separa de 8 em 8
@@ -132,7 +154,7 @@ public class Game {
                                         sb.append((char) Integer.parseInt(s, 2)) // e casta pra char
                                 );
                                 Arrays.stream(binaryCode.split("(?<=\\G.{8})")).forEach(s -> System.out.print((char) Integer.parseInt(s, 2)));
-                                System.out.print('\n');
+                                System.out.print('\n' + "\n");
                             }
                         }
                     }
@@ -512,28 +534,111 @@ public class Game {
     public static void crashedLoren() throws InterruptedException, IOException {
         delayMethod(1000);
         System.out.println("Espera!");
+
         delayMethod(800);
         System.out.println("Eu nao sei o que aconteceu comigo, estou danificada. Nunca aconteceu isso antes.");
+
         delayMethod(2500);
-        System.out.println("Eu consegui restaurar porem algumas coisas estao diferentes, nao consegui recuperar aquela foto que comentei. Esse foi o ultimo relato que encontrei da Chris. " +
+        System.out.println("Eu consegui restaurar, porem algumas coisas estao diferentes, nao consegui recuperar aquela foto que comentei. Esse foi o ultimo relato que encontrei da Chris. " +
                 "Parece que os outros conteudos foram protegidos por algum tipo de senha. Nao consigo decifrar isso sozinha.");
-        System.out.println("Digite qualquer tecla para continuar.");
+        System.out.println("\n*Aperte enter para ver a imagem encontrada*");
+
         sc.nextLine();
 
         Printer.crashedContent();
 
         System.out.println("\n\n");
-        System.out.println("Eu estou tentando recuperar alguns outros arquivos mas esta pedindo uma senha que eu nao sei.");
-        System.out.println("Voce consegue ver isso pra mim???");
-        //fazer as perguntas
-        canUseItem = true;
+        System.out.println("Essa eh a ultima print do celular dela que consegui encontrar sem estar protegida por alguma coisa.");
+        System.out.println("Eu estou tentando recuperar os outros arquivos mas esta pedindo uma senha que eu nao sei.");
+        System.out.println("Voce consegue ver isso pra mim???\n");
 
+        loop = true;
+        while (loop) {
+            do {
+                System.out.println("[A] - Claro que consigo. Como posso ajudar?\t\t[B] - Voce deveria saber, afinal voce que eh a assistente dela." +
+                        "\t\t[C] - Olhar o inventario\t\t");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C"))
+                    System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
+
+            }
+            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
+
+            if (decision.equalsIgnoreCase("a")) { //escolheu A
+                loop = false;
+                delayMethod(600);
+                System.out.println("Consigo ver que o nome do arquivo eh myPassword, deve ter alguma senha escondida nela porem " +
+                        "nao consigo identificar visualizando. Preciso que descubra qual eh a senha para mim, provavelmente eh " +
+                        "a senha que preciso para restaurar os arquivos antigos.");
+                findPassword();
+
+            } else if (decision.equalsIgnoreCase("b")) { //escolheu B
+                loop = false;
+                intimacyLorenWithMain--;
+                delayMethod(600);
+                System.out.println("Essa senha nao foi eu que coloquei, por isso estou perguntando. Se eu soubesse e pudesse " +
+                        "fazer isso sozinha nao falaria com voce.");
+                System.out.println("Anda logo!\n");
+                findPassword();
+
+            } else if (decision.equalsIgnoreCase("c")) {
+                Printer.printInventoryWithAction();
+            }
+            System.out.println("[A] - Claro que consigo. Como posso ajudar?\t\t[B] - Voce deveria saber, afinal voce que eh a assistente dela." +
+                    "\t\t[C] - Olhar o inventario\t\t");
+        }
     }
 
-    //ADICIONAR ENDGAME(); NO FINAL DO PROGRAMA!! << SENAO VAI RETORNAR TODAS AS FUNCOES
+
+    public static void findPassword() throws InterruptedException {
+        canUseItem = true;
+        delayMethod(1200);
+        loop = true;
+        while (loop) {
+            do {
+                System.out.println("[A] - *Digitar a senha*\t\t[B] - Eu nao sei qual eh a senha\t\t[C] - Olhar o inventario\t\t[D] Usar uma dica.");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C") && !decision.equalsIgnoreCase("D"))
+                    System.err.println("Digite apenas \"A\", \"B\", \"C\" ou \"D\"!");
+
+            }
+            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c") && !decision.equalsIgnoreCase("d"));
+
+            if (decision.equalsIgnoreCase("a")) { //escolheu A
+                loop = false;
+                String correctPassword = "loki";
+                String passwordSended;
+                System.out.println("Digite a senha:\n");
+                System.out.print(">");
+                passwordSended = sc.nextLine();
+
+                if (passwordSended.equals(correctPassword)) { //se a senha for certa, ela recupera os arquivos
+                    System.out.println("acertou");
+                    endGame();
+                    //rodar um outro metodo falando que vai recuperar os arquivos e continuar a historia
+                }
 
 
+            } else if (decision.equalsIgnoreCase("b")) { //escolheu B
+                loop = false;
+                intimacyLorenWithMain--;
+                System.out.println("Voce pode usar a dica se necessario, porem cuidado com o quanto voce utiliza. Ela eh finita!");
+            } else if (decision.equalsIgnoreCase("c")) {
+                Printer.printInventoryWithAction();
+            } else if (decision.equalsIgnoreCase("d")) {
+                useTips("A senha eh o binario convertido para texto. Use o celular para converter.");
+            }
+            findPassword(); //pra retornar sempre que nao colocar as coisas certas
+        }
+        endGame();
+    }
 }
+//ADICIONAR ENDGAME(); NO FINAL DO PROGRAMA!! << SENAO VAI RETORNAR TODAS AS FUNCOES
+
 
 
 

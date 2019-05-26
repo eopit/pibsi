@@ -4,6 +4,54 @@ import java.io.IOException;
 
 public class Printer {
 
+    public static void menu() {
+        System.out.println("*********************************************************");
+        System.out.println("");
+        System.out.println("888      .d88888b.  8888888b.  8888888888 888b     d888 ");
+        System.out.println("888     d88P\" \"Y88b 888   Y88b 888        8888b   d8888 ");
+        System.out.println("888     888     888 888    888 888        88888b.d88888 ");
+        System.out.println("888     888     888 888   d88P 8888888    888Y88888P888 ");
+        System.out.println("888     888     888 8888888P\"  888        888 Y888P 888 ");
+        System.out.println("888     888     888 888 T88b   888        888  Y8P  888 ");
+        System.out.println("888     Y88b. .d88P 888  T88b  888        888   \"   888 ");
+        System.out.println("88888888 \"Y88888P\"  888   T88b 8888888888 888       888");
+        System.out.println("");
+        System.out.println("*********************************************************");
+        System.out.println("\nversion 2.0\n\n\n");
+
+        System.out.println("[A] - Novo jogo");
+        System.out.println("[B] - Creditos");
+        System.out.println("[C] - Sair");
+
+        Game.loop = true;
+        while (Game.loop) {
+            do {
+                System.out.print(">");
+                Game.decision = Game.sc.nextLine();
+                if (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b") && !Game.decision.equalsIgnoreCase("c")) { // ESSE IF SERVE APENAS PARA ESCREVER O QUE O USUARIO DEVE FAZER
+                    System.err.println("Digite apenas \"A\", \"B\"! ou \"C\"");
+                }
+            } while (!Game.decision.equalsIgnoreCase("a") && !Game.decision.equalsIgnoreCase("b") && !Game.decision.equalsIgnoreCase("c")); //enquanto nao acertar as palavras ele vai continaur roadndo
+
+            if (Game.decision.equalsIgnoreCase("a")) {
+                Game.loop = false;
+                return;
+            } else if (Game.decision.equalsIgnoreCase("B"))  {
+                System.out.println("\n\nJogo desenvolvido por:\n");
+                System.out.println("Gabryelle Silva Santos");
+                System.out.println("Pedro Henrique Barricelli Martins");
+                System.out.println("\nDigite enter para voltar");
+                Game.sc.nextLine();
+                System.out.println("[A] - Novo jogo");
+                System.out.println("[B] - Creditos");
+                System.out.println("[C] - Sair");
+            } else {
+                Game.endGame();
+            }
+        }
+    }
+
+
 
     public static void printWatch() throws InterruptedException, IOException { //throws InterruptedExpection para usar o thread.sleep
         System.out.println("       .-.-.");
@@ -242,31 +290,31 @@ public class Printer {
             clearConsole();
         }
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
-        Thread.sleep(300);
+        Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
-        Thread.sleep(300);
+        Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA...");
-        Thread.sleep(300);
+        Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
-        Thread.sleep(300);
+        Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA..");
-        Thread.sleep(300);
+        Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA...");
-        Thread.sleep(300);
+        Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
-        Thread.sleep(300);
+        Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA..");
-        Thread.sleep(300);
+        Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA...");
-        Thread.sleep(800);
+        Thread.sleep(1200);
         clearConsole();
     }
 
