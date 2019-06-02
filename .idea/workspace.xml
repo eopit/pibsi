@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6b5465-60d6-4af1-bb00-405ab30d1ae0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pi1bsi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pi1bsi/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi1bsi/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pi1bsi/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi1bsi/Printer.java" afterDir="false" />
@@ -26,11 +27,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="797" lean-forward="true" selection-start-line="797" selection-end-line="797" />
+            <state relative-caret-position="504">
+              <caret line="716" column="22" selection-start-line="716" selection-start-column="22" selection-end-line="716" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2338#2339#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="833">
-              <caret line="341" column="32" selection-start-line="341" selection-start-column="32" selection-end-line="341" selection-end-column="32" />
+              <caret line="384" column="23" selection-start-line="384" selection-start-column="23" selection-end-line="384" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -56,22 +56,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>err</find>
-      <find>next</find>
-      <find>file</find>
-      <find>que seja</find>
-      <find>utilizou</find>
-      <find>loren</find>
-      <find>decodif</find>
-      <find>envie</find>
-      <find>qualquer tecla</find>
-      <find>tips</find>
-      <find>verifyTips</find>
-      <find>end</find>
-      <find>imagem encontr</find>
-      <find>binario</find>
-      <find>sistema</find>
-      <find>reiniciando</find>
       <find>tip</find>
       <find>consegue ver isso</find>
       <find>eu consegui res</find>
@@ -83,6 +67,25 @@
       <find>temos</find>
       <find>Consegui recuperar</find>
       <find>enter</find>
+      <find>celular</find>
+      <find>quem eh voce</find>
+      <find>senha</find>
+      <find>lore</find>
+      <find>loren</find>
+      <find>lorem</find>
+      <find>lower</find>
+      <find>intimacy</find>
+      <find>loop</find>
+      <find>creditos</find>
+      <find>reiniciando sistem</find>
+      <find>veja as</find>
+      <find>arthur</find>
+      <find>pai</find>
+      <find>pa</find>
+      <find>galeria</find>
+      <find>bloco de 0</find>
+      <find>bloco de notas</find>
+      <find>all</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,10 +98,16 @@
         <option value="$PROJECT_DIR$/src/pi1bsi/MyMain.java" />
         <option value="$PROJECT_DIR$/src/pi1bsi/Main.java" />
         <option value="$PROJECT_DIR$/src/pi1bsi/Methods.java" />
-        <option value="$PROJECT_DIR$/src/pi1bsi/Game.java" />
         <option value="$PROJECT_DIR$/src/pi1bsi/Printer.java" />
+        <option value="$PROJECT_DIR$/src/pi1bsi/Game.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
@@ -112,6 +121,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,7 +144,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558831158116</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Feito ate a parte das conversas do wpp depois do reset.">
+      <created>1558841519285</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1558841519285</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -327,7 +343,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12899786" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13326226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -347,7 +363,7 @@
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Maven" order="2" />
+      <window_info anchor="right" id="Maven" order="2" weight="0.32995737" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
@@ -409,7 +425,8 @@
     <MESSAGE value="Bug corrigido e inventario adicionado - testar e continuar a historia" />
     <MESSAGE value="Debug method com historia 1 quase concluida" />
     <MESSAGE value="Menu feito, continuar historia." />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu feito, continuar historia." />
+    <MESSAGE value="Feito ate a parte das conversas do wpp depois do reset." />
+    <option name="LAST_COMMIT_MESSAGE" value="Feito ate a parte das conversas do wpp depois do reset." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -436,13 +453,6 @@
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -450,20 +460,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
-          <caret line="341" column="32" selection-start-line="341" selection-start-column="32" selection-end-line="341" selection-end-column="32" />
+          <caret line="384" column="23" selection-start-line="384" selection-start-column="23" selection-end-line="384" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="797" lean-forward="true" selection-start-line="797" selection-end-line="797" />
+        <state relative-caret-position="504">
+          <caret line="716" column="22" selection-start-line="716" selection-start-column="22" selection-end-line="716" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2338#2339#0" expanded="true" />
           </folding>
         </state>
       </provider>
