@@ -37,10 +37,10 @@ public class Printer {
                 Game.loop = false;
                 return;
             } else if (Game.decision.equalsIgnoreCase("B"))  {
-                System.out.println("\n\nJogo desenvolvido por:\n");
+                System.out.println("\nJogo desenvolvido por:\n");
                 System.out.println("Gabryelle Silva Santos");
                 System.out.println("Pedro Henrique Barricelli Martins");
-                System.out.println("Aperte enter para continuar...");
+                System.out.println("\nAperte enter para continuar...");
                 Game.sc.nextLine();
                 System.out.println("[A] - Novo jogo");
                 System.out.println("[B] - Creditos");
@@ -253,7 +253,7 @@ public class Printer {
         }
     }
 
-    public static void lorenReset() throws IOException, InterruptedException {
+    public static void loremReset() throws IOException, InterruptedException {
         clearConsole();
 
         for (int i = 0; i < Game.progressBar.length; i++) { //cria a barra de loading
@@ -292,13 +292,13 @@ public class Printer {
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
         Thread.sleep(600);
         clearConsole();
-        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA..");
         Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA...");
         Thread.sleep(600);
         clearConsole();
-        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA..");
         Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA..");
@@ -396,7 +396,7 @@ public class Printer {
         Thread.sleep(600);
         clearConsole();
         System.out.println(".");
-        Thread.sleep(600);
+        Thread.sleep(1200);
         clearConsole();
     }
 }
