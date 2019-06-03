@@ -6,10 +6,380 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb6b5465-60d6-4af1-bb00-405ab30d1ae0" name="Default Changelist" comment="">
+    <list default="true" id="cb6b5465-60d6-4af1-bb00-405ab30d1ae0" name="Default Changelist" comment="a">
+      <change afterPath="$PROJECT_DIR$/../../02-exercicios3-estrutura-while.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03-classes-atributos-membros-staticos.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BLACKBOARD EAD FAZER SENAC.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Boleto.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Cursos/Java COMPLETO 2019/02-java-topicos-basicos-espaco-para-anotacoes.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Cursos/Java COMPLETO 2019/02-java-topicos-basicos.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Discord.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Dropbox.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HOW TO SUE GIT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JogoDoPedrao.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KeePass.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LISTA DE EXERCÍCIOS PRÉ-CÁLCULO.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lista 2 de Exercícios de Fundamentos de Computação.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Modelo Capa de Trabalho e Listas.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Opera Browser.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/10Ex - Pedro Henrique Barricelli Martins.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Ex.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/20Exerc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex04.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex05.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex06.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex07.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex08.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex09.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex16.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex17.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex18.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex19.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/out/production/20Exerc/Ex20.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exerc/src/Ex20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs (first bckp).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/20Exs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex04.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex05.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex06.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex07.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex08.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex09.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex16.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex17.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex18.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex19.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/Ex20.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/out/production/20Exs/META-INF/20Exs.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/20Exs/src/Ex20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Calc/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Calc/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Calc/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Calc/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Calc/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Calc/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Calc/Calc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Calc/out/production/Calc/CalcOp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Calc/src/CalcOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/ExercicioCasa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/out/production/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/Ex01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/out/production/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/Ex02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/out/production/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/Ex03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/out/production/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/Ex04.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/out/production/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/Ex05.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/out/production/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/Ex06.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/out/production/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/Ex06_BONUS.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/out/production/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/META-INF/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/out/production/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/Print.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/src/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/src/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/src/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/src/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/src/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/src/Ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/LACOEXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS/src/Ex06_BONUS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/Lista3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex04.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex05.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex06.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex07.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex08.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex09.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex16.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex17.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex18.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex19.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/out/production/Lista3/Ex20.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Ex20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/Exercicio16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Lista3/src/RamNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/RamNum/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/RamNum/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/RamNum/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/RamNum/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/RamNum/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/RamNum/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/RamNum/RamNum.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/RamNum/out/production/RamNum/RandomNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/RamNum/src/RandomNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/Socket-POC-master.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/src/main/java/com/eventoapp/eventoapp/DataConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/src/main/java/com/eventoapp/eventoapp/EventoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/src/main/java/com/eventoapp/eventoapp/EventoappApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/src/main/java/com/eventoapp/eventoapp/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/src/main/java/com/eventoapp/eventoapp/models/Evento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/src/main/resources/templates/evento/formEvento.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/eventoapp/src/test/java/com/eventoapp/eventoapp/EventoappApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/java-remote-access-master.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex.7z" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex/Ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex/Ex07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex/Ex08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex/Ex09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/pkg10ex/Ex10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/sistema-de-ocorrencias-master.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex04.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex05.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex06.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex07.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex08.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex09.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex16.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex17.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex18.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex19.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/out/production/testedos20ex/Ex20.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/Java Apps/testedos20ex/testedos20ex.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programming/sql commands.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/11 - Projeto Integrador II.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/ADO 03 - SUPERANDO DEFICIÊNCIAS E LIMITES COM SOFTWARE.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/ADO 04 - PEDRO HENRIQUE BARRICELLI MARTINS.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/ADO 3 Capitulo_03_LAUDON_Conquistando vantagem competitiva com os sistemas de informação.ppt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/ADO 3 Conquistando vantagem competitiva com os sistemas de informação pedro henrique barricelli martins.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/ADO 3 Conquistando vantagem competitiva com os sistemas de informação pedro henrique barricelli martins.docx.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/ADO 4 Capitulo__02_LAUDON E-business global e colaboração-LAUDON.ppt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/ADO_3_Capitulo_03_LAUDON_Conquistando_vantagem_competitiva_com_os_sistemas_de_informa_C3_A7_C3_A3o.ppt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/Aula 4 - String.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/Aula 6 - vetores.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/Aula 7 - matrizes.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/CENTRO UNIVERSITÁRIO SENAC.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/ENREDO E MECANICAS.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SENAC TRABALHOS/senac-logo-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER6_PEDRO_HENRIQUE_BARRICELLI_MARTINS.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/EXER7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/out/production/EXER7/senacexs/Ex01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/out/production/EXER7/senacexs/Ex02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/out/production/EXER7/senacexs/Ex03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/out/production/EXER7/senacexs/Ex04.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/src/senacexs/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/src/senacexs/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/src/senacexs/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXER7/src/senacexs/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course/course.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course/out/production/course/course/Program.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course/src/course/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curso_java/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curso_java/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curso_java/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curso_java/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curso_java/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curso_java/curso_java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curso_java/out/production/curso_java/curso_java/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curso_java/src/curso_java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/exerc6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/out/production/exerc6/senacexs/Ex01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/out/production/exerc6/senacexs/Ex02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/out/production/exerc6/senacexs/Ex03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/out/production/exerc6/senacexs/Ex04.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/out/production/exerc6/senacexs/Ex05.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/src/senacexs/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/src/senacexs/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/src/senacexs/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/src/senacexs/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerc6/src/senacexs/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jogo backup/pi1bsi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pi1bsi.zip" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pi1bsi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pi1bsi_04_05_bckp.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pi1bsi_28_04_bckp.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pi1bsi_old.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/hozerexs/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../VER DPEOIS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cmd java commands.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cv-gabryelle.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../db/bckp/1/mydb.kdbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../db/bckp/2/mydb.kdbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../db/bckp/3/mydb.kdbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../db/bckp/4/mydb.kdbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../db/bckp/5/mydb.kdbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../db/bckp/piwtk.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../db/mydb.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../db/mydb.kdbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../db/mydb2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../facul.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../facul2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pi1bsi.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sublime save" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../vibranceGUI.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pi1bsi/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi1bsi/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pi1bsi/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi1bsi/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pi1bsi/Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi1bsi/Printer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pi1bsi/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi1bsi/Printer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,8 +397,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="716" column="22" selection-start-line="716" selection-start-column="22" selection-end-line="716" selection-end-column="22" />
+            <state relative-caret-position="523">
+              <caret line="1121" column="37" lean-forward="true" selection-start-line="1121" selection-start-column="37" selection-end-line="1121" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,8 +409,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="384" column="23" selection-start-line="384" selection-start-column="23" selection-end-line="384" selection-end-column="23" />
+            <state relative-caret-position="372">
+              <caret line="520" column="9" selection-start-line="520" selection-start-column="9" selection-end-line="520" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -56,23 +426,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tip</find>
-      <find>consegue ver isso</find>
-      <find>eu consegui res</find>
-      <find>nome</find>
-      <find>Thread.sleep</find>
-      <find>filesrestored</find>
-      <find>vou tentar</find>
-      <find>consegui recuperar</find>
-      <find>temos</find>
-      <find>Consegui recuperar</find>
-      <find>enter</find>
-      <find>celular</find>
-      <find>quem eh voce</find>
       <find>senha</find>
       <find>lore</find>
       <find>loren</find>
-      <find>lorem</find>
       <find>lower</find>
       <find>intimacy</find>
       <find>loop</find>
@@ -86,6 +442,20 @@
       <find>bloco de 0</find>
       <find>bloco de notas</find>
       <find>all</find>
+      <find>viu</find>
+      <find>clear</find>
+      <find>celular</find>
+      <find>Celular</find>
+      <find>endgame</find>
+      <find>delete</find>
+      <find>nacionalidade</find>
+      <find>e-mail</find>
+      <find>aparentemente</find>
+      <find>ir dormir</find>
+      <find>printskull</find>
+      <find>skull</find>
+      <find>lorem</find>
+      <find>digite apenas numeros</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,8 +490,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,7 +697,28 @@
       <option name="project" value="LOCAL" />
       <updated>1558841519285</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Capitulo 2 finalizado.">
+      <created>1559439606627</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1559439606628</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Feito ate a parte das conversas do wpp depois do reset.">
+      <created>1559439617492</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1559439617492</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Capitulo 2 finalizado">
+      <created>1559439714876</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1559439714876</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -343,7 +734,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13326226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13432837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -353,7 +744,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7638593" weight="0.31527627" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70629" weight="0.3066089" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70629" visible="true" weight="0.3066089" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.32936078" />
@@ -425,8 +816,10 @@
     <MESSAGE value="Bug corrigido e inventario adicionado - testar e continuar a historia" />
     <MESSAGE value="Debug method com historia 1 quase concluida" />
     <MESSAGE value="Menu feito, continuar historia." />
+    <MESSAGE value="Capitulo 2 finalizado." />
     <MESSAGE value="Feito ate a parte das conversas do wpp depois do reset." />
-    <option name="LAST_COMMIT_MESSAGE" value="Feito ate a parte das conversas do wpp depois do reset." />
+    <MESSAGE value="Capitulo 2 finalizado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Capitulo 2 finalizado" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -469,15 +862,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="384" column="23" selection-start-line="384" selection-start-column="23" selection-end-line="384" selection-end-column="23" />
+        <state relative-caret-position="372">
+          <caret line="520" column="9" selection-start-line="520" selection-start-column="9" selection-end-line="520" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="716" column="22" selection-start-line="716" selection-start-column="22" selection-end-line="716" selection-end-column="22" />
+        <state relative-caret-position="523">
+          <caret line="1121" column="37" lean-forward="true" selection-start-line="1121" selection-start-column="37" selection-end-line="1121" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

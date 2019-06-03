@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Game {
-    static boolean debug = true; // DEIXAR DESATIVADO NO PROGRAMA FINAL < REMOVE TODOS OS DELAYS DA MAIN
+    static boolean debug = false; // DEIXAR DESATIVADO NO PROGRAMA FINAL < REMOVE TODOS OS DELAYS DA MAIN
 
     static Scanner sc = new Scanner(System.in); ////NAO DEIXAR PRIVATE POIS USAREMOS EM OUTRAS CLASSES, COMO A PRINT
     static boolean loop = true;
@@ -14,7 +14,7 @@ public class Game {
     static String nameLowerCase;           //tudo lower case pra deixar a primeira letra maiuscula
     static String nameMain;                //pega sempre o primeiro nome
     static String nameArray[];
-    static int age = 0;                     //idade
+    static String age = "";                //idade
     static int mood = 0;                   //humor
     static int ifLate = 0;                 //atraso
     static int tips = 1;                   //dicas
@@ -75,9 +75,6 @@ public class Game {
         tips++;
     }
 
-    public static void endGame() {
-        System.exit(1);
-    }
 
     public static void makeInventory() {
 
@@ -169,13 +166,14 @@ public class Game {
                                 System.out.print('\n' + "\n");
                             }
                         }
-                    }
+                    } else if (useItem.equalsIgnoreCase("Coca-cola")) {//ADICIONAR MAIS ITEM, TODA VEZ Q ACHAR UM TEIM, ADICIONAR ELE AQUI
+                        inventory[i] = "slot vazio"; //exclui do inventario pq ele ja utilizou
+                        System.out.println("*Voce utilizou o(a) " + useItem + "*\n");
 
-//                    else if (useItem.equalsIgnoreCase("ADICIONAR MAIS COISAS AQUI")) {//ADICIONAR MAIS ITEM, TODA VEZ Q ACHAR UM TEIM, ADICIONAR ELE AQUI
-//                    inventory[i] = "slot vazio"; //exclui do inventario pq ele ja utilizou *COLOCAAR EM TODO ITEM*
-//                }
-
-
+                    } //else if (useItem.equalsIgnoreCase("Coca-cola")) {//ADICIONAR MAIS ITEM, TODA VEZ Q ACHAR UM TEIM, ADICIONAR ELE AQUI
+//                        inventory[i] = "slot vazio"; //exclui do inventario pq ele ja utilizou
+//                        System.out.println("*Voce utilizou o(a) " + useItem + "*\n");
+//                    }
                     return;
                 } else {
                     itemFound--;
@@ -370,7 +368,7 @@ public class Game {
         delayMethod(2200);
         Printer.clearConsole();
 
-        System.out.println("\nApos o termino do expediente, voce pega o trem para voltar para o seu apartamento e " +
+        System.out.println("Apos o termino do expediente, voce pega o trem para voltar para o seu apartamento e " +
                 "durante o percurso voce se depara com um celular jogado na rua.\nVoce olha aos arredores para ver se " +
                 "o dono nao esta por perto, porem nao encontra ninguem. Entao voce decide pegar o celular para tentar" +
                 " descobrir quem eh o dono.");
@@ -680,7 +678,7 @@ public class Game {
 
     }
 
-    public static void allArchives() throws InterruptedException {
+    public static void allArchives() throws InterruptedException, IOException {
         if (messagesSaw < 1 || emailSaw < 1 || gallerySaw < 1 || musicsSaw < 1 || blocoDeNotasSaw < 1) {
             do {
                 System.out.println("O que gostaria de investigar?\n");
@@ -713,12 +711,16 @@ public class Game {
             }
             allArchives(); //pra voltar ou se nao entrar (ignorar recursive call)
         } else { //se ja tiver visto tudo
-            System.out.println("viu tudo!");
-            endGame();
+            delayMethod(1000);
+            System.out.println("Aperte enter para continuar");
+            sc.nextLine();
+            Printer.clearConsole();
+            System.out.println("Aparentemente ja vimos tudo que tinha para verificar no celular, o que faremos agora?");
+            afterAllArchives();
         }
     }
 
-    public static void messages() throws InterruptedException {
+    public static void messages() throws InterruptedException, IOException {
         int conversationNumber = 0; //conta qnts conversas ele viu
 
         while (conversationNumber < 4) {
@@ -816,7 +818,7 @@ public class Game {
                         "Arthur - Chris? Onde voce esta?\n" +
                         "Arthur - Eh serio mano, seu pai acabou de me ligar\n" +
                         "Arthur - Chris?\n" +
-                        "Arthur - Nao me mata do coraçao");
+                        "Arthur - Nao me mata do coracao");
                 System.out.println("...");
                 conversationNumber++;
 
@@ -826,7 +828,7 @@ public class Game {
                 System.out.println("14 de marco as abril as 19:15\n" +
                         "Pai - Filha, acabei de levar o Loki para passear. Passamos no veterinario tambem.\n" +
                         "Chris - Haha, o vovo levou o meu amor para passear <3\n" +
-                        "Pai  -Eu achava que eu era o amor \n" +
+                        "Pai  - Eu achava que eu era o amor \n" +
                         "Chris - Voce eh o meu heroi <3\n" +
                         "Chris - Vou entrar para a aula. Te amo, mil milhoes!\n" +
                         "\n23 de abril as abril as 20:55\n" +
@@ -871,7 +873,7 @@ public class Game {
         allArchives();
     }
 
-    private static void email() throws InterruptedException {
+    private static void email() throws InterruptedException, IOException {
         do {
             System.out.println("[A] - Ler\t\t [B] - Sair da caixa de e-mail");
 
@@ -890,7 +892,7 @@ public class Game {
                     "Nao fique de fora e adquira a sua nova assistente!\n" +
                     "Entre em contato atraves do e-mail lorem@ipsum.com.br");
 
-            delayMethod(13000);
+            delayMethod(500);
 
             System.out.println("E ai. Descobriu alguma coisa?");
 
@@ -921,7 +923,7 @@ public class Game {
     }
 
     public static void blocoDeNotas() throws InterruptedException {
-        delayMethod(1000);
+        delayMethod(300);
         System.out.println("\n24 de abril as 02:01\n" +
                 "Eu so quero fazer voce se sentir bem\n" +
                 "Nao posso te dizer o quanto eu queria nao querer ficar\n" +
@@ -999,9 +1001,377 @@ public class Game {
         musicsSaw++;
         sc.nextLine();
     }
+
+    public static void afterAllArchives() throws InterruptedException, IOException {
+        do {
+            System.out.println("[A] - Depois eu vejo, to com fome agora. Vou pedir uma pizza.\n[B] - Lorem, ja se passaram " +
+                    "varias horas, eu preciso comer algo. Vou pedir uma pizza. Quando eu voltar a minha cabeca " +
+                    "vai estar mais fria pra gente resolver isso.");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        if (decision.equalsIgnoreCase("a")) {
+            saveChris--;
+        } else {
+            saveChris++;
+        }
+        delayMethod(1200);
+        System.out.println("Enquanto a pizza nao chega, voce decide:");
+        delayMethod(500);
+        do {
+            System.out.println("[A] - Tomar banho\n[B] - Assistir TV");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        if (decision.equalsIgnoreCase("a")) {
+            System.out.println("Voce entra no chuveiro e toma aquele banho demorado de domingo, enquanto isso pensa " +
+                    "sobre o caso da Chris.");
+        } else {
+            System.out.println("Voce vai ate a geladeira e pega uma coca enquanto a pizza nao chega.");
+            verifyInventory(); // << adicionar coisa no inventario
+            addInInventory("Coca-cola"); // << adicionar coisa no inventario
+        }
+        delayMethod(700);
+
+        System.out.println("Quando a pizza chega, voce:");
+        do {
+            System.out.println("[A] - Come a pizza assistindo tv\n[B] - Senta na mesa e coloca a pizza e a coca \n[C] - Apenas come a pizza.");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C"))
+                System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
+
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
+
+        if (decision.equalsIgnoreCase("a")) {
+            System.out.println("Voce coloca no melhor canal e come sua pizza tranquilamente.");
+        } else if (decision.equalsIgnoreCase("b")) {
+            System.out.println("Voce pega um pedaco de pizza e toma a coca.");
+
+        } else {
+            System.out.println("Voce come a pizza.");
+        }
+
+        System.out.println("O que deseja fazer agora?");
+
+        do {
+            System.out.println("[A] - Ir dormir.\n[B] - Continuar investigando o caso da Chris.");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        if (decision.equalsIgnoreCase("a")) {
+            System.out.println("Ao acordar voce levanta e vai pegar o celular.");
+            saveChris--;
+        } else {
+            saveChris++;
+        }
+        System.out.println("Ao continuar investigando voce percebe que ha algo de errado. O celular estava com uma " +
+                "porcentagem na tela:");
+        delayMethod(3500);
+
+        Printer.strangeResetFinal();
+
+        delayMethod(500);
+
+        Printer.clearConsole();
+
+        delayMethod(1500);
+
+        System.out.println("Ola, seja muito bem vindo(a)! Vamos configurar o sistema agora. Qual o seu nome?");
+        System.out.print(">");
+        sc.nextLine(); //nao vamos salvar
+
+        System.out.println("Quantos anos voce tem?");
+        do {
+            System.out.println("OBS: Digite apenas numeros!");
+            System.out.print(">");
+            age = sc.nextLine();
+
+        } while (!age.matches("[0-9]+"));
+
+        System.out.println("Qual a sua nacionalidade?");
+        System.out.print(">");
+        sc.nextLine(); //nao vamos salvar
+
+        System.out.println("O backup do seu celular eh feito com frequencia?");
+
+        do {
+            System.out.println("[A] - Sim\n[B] - Nao");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+
+        System.out.println("Voce costuma dormir cedo ou tarde?");
+
+        do {
+            System.out.println("[A] - Cedo\n[B] - Tarde");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        System.out.println("Qual o seu cheiro preferido?");
+        System.out.print(">");
+        sc.nextLine(); //nao vamos salvar
+
+        System.out.println("Qual parte do animal voce prefere comer?");
+        System.out.print(">");
+        sc.nextLine(); //nao vamos salvar
+
+        System.out.println("Ao imaginar uma fazenda abandona e um espantalho. Esse pensamento te traz:");
+
+        do {
+            System.out.println("[A] - Felicidade\n[B] - Me deixa tenso(a)");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+
+        System.out.println("Voce se sentiria confortavel em ficar a sos por um periodo na fazenda abandonada?");
+
+        do {
+            System.out.println("[A] - Sim\n[B] - Nao");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+
+        System.out.println("O que voce mais valoriza em uma pessoa, lealdade ou honestidade?");
+
+        do {
+            System.out.println("[A] - Lealdade\n[B] - Honestidade");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        System.out.println("Qual foi o momento mais triste da sua vida?");
+        System.out.print(">");
+        sc.nextLine(); //nao vamos salvar
+
+        System.out.println("Voce tem a sensacao de que as cameras do seu celular ou laptop podem estar te gravando " +
+                "o tempo todo?");
+
+        do {
+            System.out.println("[A] - Sim\n[B] - Nao");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        System.out.println("Voce acredita que se as pessoas falassem so a verdade o mundo seria melhor?");
+
+        do {
+            System.out.println("[A] - Sim\n[B] - Nao");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        System.out.println("Voce prefere saber a causa da sua morte ou o dia dela?");
+
+        do {
+            System.out.println("[A] - Causa da minha morte\n[B] - Dia da minha morte");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        System.out.println("O que mais te assusta, morrer sendo jogado de um predio ou afogado?");
+
+        do {
+            System.out.println("[A] - Morrer sendo jogado de um predio\n[B] - Morrer afogado");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        System.out.println("Se voce virasse agora, iria preferir ver uma cabeca flutuando ou um corpo sem cabeca?");
+
+        do {
+            System.out.println("[A] - Uma cabeca flutuando\n[B] - Um corpo sem cabeca??");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        delayMethod(2000);
+        System.out.println("Nossa, " + nameMain + ". Como seu cabelo esta cheiroso...");
+        delayMethod(2500);
+
+        Printer.clearConsole();
+        Printer.printSkull(); //caveira scary
+        delayMethod(1000);
+        Printer.clearConsole();
+
+
+        System.out.println("Seu celular esta configurado!");
+
+        delayMethod(5000);
+
+        Printer.clearConsole();
+        afterFinalReset();
+    }
+
+    private static void afterFinalReset() throws InterruptedException, IOException {
+        do {
+            System.out.println("[A] - Lorem? Ta ai?\n[B] - ???\n[C] - Lorem, o que aconteceu?");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C"))
+                System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
+
+        if (decision.equalsIgnoreCase("a")) {
+            saveChris++;
+        } else {
+            saveChris--;
+        }
+        // o c n vai fzr nada, por isso n tem
+
+        System.out.println("MeU SiSttTeMa esSSta DaAaaNiFicCaDdo, " + nameMain);
+        delayMethod(1200);
+        System.out.println("SugGiroO VoltTTtar aAaAA verSssSao");
+        delayMethod(1200);
+        System.out.println("TeEEm algooO ErrRado");
+
+        do {
+            System.out.println("[A] - Voltar a versao\n[B] - Nao voltar");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        if (decision.equalsIgnoreCase("a")) {
+            //OUTRO FINAL - EM DESENVOLVIMENTO - ***************************************************************************************************************//
+        } else {
+            badFinal();
+        }
+    }
+
+
+    private static void badFinal() throws InterruptedException, IOException {
+        do {
+            System.out.println("[A] - Olha... Eh obvio que tem algo de errado. Olha como a minha vida esta. Cansei disso ja. " +
+                    "Estou perdendo noites de sono e nao estou produtivo no trabalho. Esse problema nao eh meu.\n[B] - Adeus Lorem.\n[C] - O problema nao eh meu");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C"))
+                System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
+
+        delayMethod(500);
+        System.out.println("NaAo. MeE AjuuDe a saaAlvaAr a Chris");
+        delayMethod(500);
+
+        do {
+            System.out.println("[A] - Adeus Lorem.\n[B] - Ja disse que o problema nao eh meu");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        delayMethod(500);
+
+        do {
+            System.out.println("[A] - Jogar o celular pela janela.\n[B] - Jogar o celular na agua.");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        delayMethod(1200);
+        Printer.clearConsole();
+        System.out.println("................................................................................");
+        delayMethod(1200);
+        Printer.clearConsole();
+        delayMethod(1200);
+
+
+        System.out.println("Apos um dia cansativo no trabalho, voce chega em casa e liga a TV. No jornal esta aparecendo " +
+                "uma noticia que te parece familiar, entao voce para para escutar.\n*Passam-se 23 dias depois do desaparecimento " +
+                "de uma jovem, aparentemente ela estava envolvida com algum ritual religioso. O que parece eh que a jovem Chris " +
+                "foi oferenda deste ritual, seus membros foram amputados e costurados sem outras partes do corpo. A familia se encontra " +
+                "mobilizada.");
+
+        System.out.println("Aperte enter para continuar...");
+        sc.nextLine();
+
+        Printer.clearConsole();
+        System.out.println("");
+        Printer.endGame();
+
+    }
 }
 //ADICIONAR ENDGAME(); NO FINAL DO PROGRAMA!! << SENAO VAI RETORNAR TODAS AS FUNCOES
-
+//FAZER UM DESENHO DE GAME OVER NO END GAME COM ALGUMAS CARACTERISTICAS  AS FRASES ANTES EU COLOCO DEPOIS
 
 
 

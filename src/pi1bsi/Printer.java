@@ -36,7 +36,7 @@ public class Printer {
             if (Game.decision.equalsIgnoreCase("a")) {
                 Game.loop = false;
                 return;
-            } else if (Game.decision.equalsIgnoreCase("B"))  {
+            } else if (Game.decision.equalsIgnoreCase("B")) {
                 System.out.println("\nJogo desenvolvido por:\n");
                 System.out.println("Gabryelle Silva Santos");
                 System.out.println("Pedro Henrique Barricelli Martins");
@@ -46,11 +46,11 @@ public class Printer {
                 System.out.println("[B] - Creditos");
                 System.out.println("[C] - Sair");
             } else {
-                Game.endGame();
+                System.out.println("Obrigado por jogar.");
+                System.exit(1);
             }
         }
     }
-
 
 
     public static void printWatch() throws InterruptedException, IOException { //throws InterruptedExpection para usar o thread.sleep
@@ -298,7 +298,7 @@ public class Printer {
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA...");
         Thread.sleep(600);
         clearConsole();
-        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA..");
+        System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA.");
         Thread.sleep(600);
         clearConsole();
         System.out.println("RESTAURACAO CONCLUIDA COM EXITO. REINICIANDO SISTEMA..");
@@ -398,6 +398,135 @@ public class Printer {
         System.out.println(".");
         Thread.sleep(1200);
         clearConsole();
+    }
+
+
+    public static void strangeResetFinal() throws IOException, InterruptedException {
+        clearConsole();
+
+        for (int i = 0; i < Game.progressBar.length; i++) { //cria a barra de loading
+            Game.progressBar[i] = "-";
+            if (i == 0) {
+                Game.progressBar[i] = "[";
+            } else if (i == 99) {
+                Game.progressBar[i] = "]";
+            } else if (i > 0 && i < 97) {
+                Game.progressBar[i] = "#";
+            }
+        }
+
+
+        for (int i = 96; i < Game.progressBar.length; i++) { //PRINTA A BARRA EM SI (VAI REPETIR 4 VEZES)
+            System.out.println("INICIALIZANDO SISTEMA NA VERSAO DE FABRICA\t\t\t\tCARREGANDO..." + (i) + "%");
+            printProgressBar();
+            if (i >= 1 && i <= 99)
+                Game.progressBar[i] = "#";
+            Thread.sleep(2300);
+            clearConsole();
+        }
+        System.out.println("REBOOTING...");
+        Thread.sleep(2000);
+    }
+
+    public static void printSkull() {
+        System.out.println("                                                                                                    \n" +
+                "                         oMNMMNMmhhyhyhyyhyhshhyhyhhmMNMNNMNMNMMNMNMNMMmMNMNhh-    X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                     ....sMNNNmNdyyssssshhssshhhhhhhNMNmymNmNmNNNMNMMMMNMNMNhh-`   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                    -NNmNNMNyysyyyy-````-.````.::+osyhd+ ```-syyMMNMNMNMMNMNMNss-  X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                    -MMNMNMNhhyhhhh-                 ``     `shhMMNMNMNMMNMMMNhh:          X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                  /hdMMyyyyysyosso-:--.```                  `+shddyhhMNMMNMMMMNNdhhhhhh/   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                  +MNMMyyyyyyy++/    ```                       ```.hyMNMMNMNMMNMNMNMMmMs       X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                ++yMNdhosssoyyosyo/oohs+ys-                  -/+sodNNMNddNMNMMMMNMNMNdhs:/ss`  X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                NMmMmhh//.``.-:-:-.``-`-MM:                    -:-....oysNMNMNMMNMNMm..--+MN`  X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "             `::MMmNdyyyh/` /Nms:-.----:dd-                    `+hh/ -dddNMmmmMMNMNMNhyyyyhy`  X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "             :MNMMhys+oo..`  /. .ssdNmNmNN:                     +o. .+ssyyys+oMMNMNMNMMNMh     X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "             :MMNMhhy+:h+/:     .sshdddddd:                      `ooooo+/: -ssMNNMNMNMMNMh     X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "           sdmMMyyooo. -..` yddddmmdmmmmmmddddh`                 `yyyyyyys  -syymMNMNMMNMh     X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "           yMNMMhyo+`       dMNMNMNNMNMNNMNMNMm`                   `-/://::.`ohhdMNMNMMNMh     X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "        `ssmMmhhyyy+     -soyhhhhhhyhhhhhhhhhhh.                :o:.`------smmmNhhdMMNMNMmss`  X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "        `MMmMmhhshy. `   +MNNMNMNMMmMNMNNMNMNMN:                ``..     -:sMNy::-+MMNMNMNMM-  X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "      /MMMMNMh+` .s -NNmNmNmNNmNmNmmNmNmNNmNmNmNN:       `:/. `yMNMMNMNMMMMNMdo`    .mNmNmNmmN/    X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "    oyhMNhhyhy:  .- .ddddddddddddddhddddddddddddd:       .mm/  sMMMMNMNMMMMNMNNd:    --sdddddd+..  X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "    mMNMNyyd     `  :mmmNmNmmNmNmssossssmNmmh            `+./yNNMMNNNMNyydMNMMNMho.  /   `mNmNmNm. X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "    mMNMNys+        ```yddddddhddddddhdhdd-          .   `yMNs:/ss/omMNMNNMNMNMMmmd: `   :ddddddh++`   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "    mMNMm++-           dNNNNNNmMNMNNNNNNNN-               yMN+ `.  .dMNMNMMNMNMNh:/o     oNNNNNNmhh`   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " .ssNMNMd++//-.        :::::hhhhyssos+::::`              `dNN: +y  -oydhdddmMNddddd+     .//yhhhhsy-   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " -MMNMNMmo:```-             dMNMmyysh+                    ---`          .ohdMN-::``.        hMNMNNM/   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " :MMNMNMN-   :.`            shyso////-                                   :/ohy``            shhhhhh-   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " -MMNMNMm-          .       dM/                                            sMm.`            mMNMNMM.   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " -MMNMNMm:          `       hN:                                            oNd.`            mNNNmNN.   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " :MMNMNMN:               /dy                .dy..yd+               `         -dd`          `hdhdddd    X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " -MMNMNMN:          `    oNm`               `Nm..dNs                         :NN-          `mNNNNNN`   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " :MMNMNMN:               .--              +oody``sdo::                       `::`           hdhdhdh`   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " -MMNMNMm:                   `           `mMNMm``dMdhh`                                     mMNMNMM.   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " :MMNMmmd:                `             --yhyso``shsso``                                    yhhhhhh`   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " -MMNMhyy/                             .MMNMy..  hMNMM:.`                                   mMNMNMM.   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " :MMNMdhh/                             `ssos/``  odhdd-.`                                   hdddddd`   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " -MMNMhys:                                                                                  dNmNmNN.   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " -MMNMNMm                                         `          ```                           `mNmNNNN`   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " :MMNMNMN`                             .//yh/    ohyhhhh:    shyhyhh-    /+-`              `hdhdhdd-   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " -MMNMNMm`                             :hymMy    yMNMMMM+    mMmMNMM:    yhss:`             mMNMNMM-   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " :ddNMNMN+--:-.        .`    ..-:    +hdmmNMh    hMNMMMMo    dMNMMMM/   `dmmmmy.         `--yhhhhoo.   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " .hhmMNMNyhy. `     `.       /ohs    oMNNMNMy    yMNMMNMo    hMNMMNM/   -dMNMNo+         :hhmMNMNyh:   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                " `/+mMNMNhdh/  -o/.  .     ++yhds    yMNNMNMy    hMNMMMM+   `dMNMMNM:   -mMNMNhdh+      -ydhmMNMNss:   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "    mMNMMMMh/  `.`         /MMNMd    yMNMMMMo    dMNMNMM/    mMNMNMM-   .NMNMNMNy`     .ohMNNMNMh``    X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "    shdMNNMNMd.  `    /mMNMNNMNMy    hMNMMNMo   `hMNMMMM/   -mMmMNMM-   -NMNMNMMo-   `shMNMNNMdhs      X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "    /ohMMMMNdh+  `    ymMNMNNMNMh    hMNMMNMo   `ymdmyyh:   `ydhdmNN:   :hddmdddo-  -++sdhNNNMdys      X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "      +MMMMNNh:       /dMNMNMMNMh    yMNMMMM+   `sho+:```       `.--`   ```.....`   +yydNNMNNMo``      X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "      oNNMMNMds+:..   +dNmNmNNmNy    yMNNNNN+    ss+.  ``.`             `::+o+ss- -`:hhdMNMNNNo        X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "      /yyNMNMNMMy-    +/-.------.    yyyyssy/    -.`   ./:`             `yydMNMM: /`-MMNMNMNyy/        X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "      ``:MMNMNMMmNs+/++o//:/++/:::-   `+oohh/   //dhddddo.  :ohhhhhho.  +hmhdh+-:/ymmMMNMNMN-.`        X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "        .MMmMNMMMMys.    `           . :hhmMs   /hMNMMMMs-  +mMmMNMMo-  +NMNMd `  oMNMMNMNMN`          X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "        `+oNMNMMMMdmdo   :/::::/:` `--/hddNMs   :dMNMMMMh:  /mMNMNMMy/  +dmddh`+yhdMMMMNMdss`          X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "          `dMNMMMMmMh`   sMNMMNMh. `:hMNMMMMy.  `dMmMNMMs-  +mMNMNMM+.  +yh/`. `dMNMNMMNMs             X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "           ohmMMMMNMd+/``yMNmmNMd/:-.hMNMMMMh.  /dMNMNMMy:  /mMNMNmm+/` -oso:-++mMNMNMMmmo             X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "             +MMMMNMNMM- -/:.-dMmyy- dMNMMNMh`  /hMNMMMMy-  /mMNMNmmso+. .-syyMMNMNMMNMo               X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "             +NNMMNMNMM/-...``hMmhy/ hMNMMNMh.``hhMNMMMMy/` +mMmMNMMhhy: .oyhhMMNMNMMmN+               X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "             .-:NMNMMMMmNdyy/.:/:::. sMNMMNMdy+dMdMNMMNMdys:`yhhMMs+/::` yNNNNMMNMNMM--.               X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "               `mMNMMMMmMmhh:.``  `  sMNNMNMmhhNMdMNMMNMdhh/`shhMM:  ````yMNMMNMNMNMM                  X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                :/mMMMMNMNmmshsso`.: /yyyyyysoosdhmddddmhs+: :++oo. sddhdmMNMMMMNMmoo                  X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                  yMNMMNMNMNMMyyo` -.           oyyyyyyyo- . .-..   sMNMMNMNMMNMNMh                    X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                  +yhMMNMNMNMMddyo+ys+/:`   `..-yyyyyyyys/-ss////+oshMNMMNMMMNmmmmh                    X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                    -MMNMNMNMMNMNMNNMhys.              ` `.yymMNMMMMmMNMMMMmMm                         X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                    -NNmNNNNNNmNNNNNNhyo`   ``            .yymNmNNNNmNNNNNNmNd                         X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                         +dhddhdhdhhdhdhhhhhhhhhhhhyhhhhhhyddhdhdhddhdhdddd:                           X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                         oNNNNmNNNNNNNNmNNNNNNmNNNNmNNNNNNmNNNNmNNNNNNmNNNN:                           X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                         .::::::+hhhhhhhhhhhhhhhhhhyhhhhhhyhhhhhhhhh+::::::`                           X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X\n" +
+                "                                   sssssmmmmdmmdmmmdmmdmdmdssssoss.                                    X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X   X");
+    }
+
+    public static void endGame() {
+        System.out.println("FFFFFFFFFFFFFFFFFFFFFF     IIIIIIIIII     MMMMMMMM               MMMMMMMM");
+        System.out.println("F::::::::::::::::::::F     I::::::::I     M:::::::M             M:::::::M");
+        System.out.println("F::::::::::::::::::::F     I::::::::I     M::::::::M           M::::::::M");
+        System.out.println("FF::::::FFFFFFFFF::::F     II::::::II     M:::::::::M         M:::::::::M");
+        System.out.println("  F:::::F       FFFFFF       I::::I       M::::::::::M       M::::::::::M");
+        System.out.println("  F:::::F                    I::::I       M:::::::::::M     M:::::::::::M");
+        System.out.println("  F::::::FFFFFFFFFF          I::::I       M:::::::M::::M   M::::M:::::::M");
+        System.out.println("  F:::::::::::::::F          I::::I       M::::::M M::::M M::::M M::::::M");
+        System.out.println("  F:::::::::::::::F          I::::I       M::::::M  M::::M::::M  M::::::M");
+        System.out.println("  F::::::FFFFFFFFFF          I::::I       M::::::M   M:::::::M   M::::::M");
+        System.out.println("  F:::::F                    I::::I       M::::::M    M:::::M    M::::::M");
+        System.out.println("  F:::::F                    I::::I       M::::::M     MMMMM     M::::::M");
+        System.out.println("FF:::::::FF                II::::::II     M::::::M               M::::::M");
+        System.out.println("F::::::::FF                I::::::::I     M::::::M               M::::::M");
+        System.out.println("F::::::::FF                I::::::::I     M::::::M               M::::::M");
+        System.out.println("FFFFFFFFFFF                IIIIIIIIII     MMMMMMMM               MMMMMMMM");
+
+        System.out.println("\nAlgumas decisoes feitas por voce:\n");
+
+        System.out.print("Seu nome: ");
+        for (int i = 0; i < Game.nameArray.length; i++) { //PRINTA O NOME
+            System.out.print(Game.nameArray[i] + " ");
+        }
+        System.out.println("\nSua idade: " + Game.age);
+        System.out.println("Seu humor: " + Game.mood);
+        System.out.println("Nivel de atraso (quantas vezes escolheu dormir no comeco): " + Game.ifLate);
+        System.out.println("Nivel de intimidade com A Raquel: " + Game.intimacyRaquelWithMain);
+        System.out.println("Nivel de intimidade com A Lorem: " + Game.intimacyLoremWithMain);
+
+        System.out.println("\nObrigado por jogar!");
+        System.exit(1);
     }
 }
 
