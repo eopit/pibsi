@@ -506,6 +506,7 @@ public class Game {
             System.out.println("Otimo!");
             delayMethod(1500);
             loop = false;
+            addTips();
             helpLoremReset();
             return;
         } else if (decision.equalsIgnoreCase("c")) { //SE ESCOLHER C
@@ -1564,11 +1565,50 @@ public class Game {
 
             delayMethod(1200);
 
-            System.out.println("Estamos quase sem tempo, vamos la. O jogo ja vai comecar, quem vive para ver o sol amanha?");
+            System.out.println("Estamos quase sem tempo, vamos la. O jogo ja vai comecar, ");
+            System.out.println("Antes disso, para nao falar que nao sou piedoso, vou te dar uma chance. Se voce acertar, suas chances de salvar a sua " +
+                    "tao querida garotinha ira aumentar, caso contrario nada acontecera.");
 
+            System.out.println("A pergunta eh: Quais as cores do arco iris na ordem certa?");
+
+            do {
+                System.out.println("[A] - Responder\n[B] - Usar uma dica.");
+                System.out.print(">");
+                decision = sc.nextLine();
+
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("b")) {
+                    System.out.println("Digite apenas \"A\" ou \"B\"");
+                }
+
+            } while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+            if (decision.equalsIgnoreCase("b")) {
+                useTips("V - L - A - V - A - A - V");
+            }
+
+            int j = 0;
+            String[] arcoIrisColors = new String[7];
+            do {
+                System.out.println("Qual a " + (j + 1) + " cor do arco iris?");
+                System.out.print(">");
+                arcoIrisColors[j] = sc.nextLine();
+                j++;
+            } while (j < 7);
+
+            if (arcoIrisColors[0].equalsIgnoreCase("vermelho") && arcoIrisColors[1].equalsIgnoreCase("laranja") && arcoIrisColors[2].equalsIgnoreCase("amarelo")
+                    && arcoIrisColors[3].equalsIgnoreCase("verde") && arcoIrisColors[4].equalsIgnoreCase("azul") && arcoIrisColors[5].equalsIgnoreCase("anil") &&
+                    arcoIrisColors[6].equalsIgnoreCase("violeta")) {
+                System.out.println("Olha so, conseguiu acertar... O que voce nao faz por essa humilde garotinha, nao eh mesmo?");
+                saveChris += 2;
+            } else {
+                System.out.println("Infelizmente vc errou, mas nao pode dizer que nao tentei ajudar.");
+            }
+
+            delayMethod(1200);
 
             if (saveChris > 5) {
                 do {
+                    System.out.println("Quem vive para ver o sol amanha?");
                     System.out.println("[A] - Manson\n[B] - Chris");
 
                     System.out.print(">");
@@ -1608,6 +1648,7 @@ public class Game {
                 }
             } else {
                 do {
+                    System.out.println("Quem vive para ver o sol amanha?");
                     System.out.println("[A] - Manson\n");
 
                     System.out.print(">");
