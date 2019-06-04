@@ -1309,7 +1309,7 @@ public class Game {
             do {
                 System.out.println("[A] - Eu nao sei, voce simplesmente fez backup e comecou a fazer " +
                         "varias perguntas estranhas\n[B] - Voce surtou, comecou a perguntar umas coisas nada a ver, " +
-                        "que tipo de brincadeira eh essa?\n");
+                        "que tipo de brincadeira eh essa?");
 
                 System.out.print(">");
                 decision = sc.nextLine();
@@ -1429,7 +1429,7 @@ public class Game {
 
             do {
                 System.out.println("[A] - Essas informacoes sao vagas, nao chegamos a nenhuma conclusao. Vamos, Lorem, deve ter mais alguma pista\n" +
-                        "[B] - Pensei que voce era mais competente. Estou ficando farto dessa história.");
+                        "[B] - Pensei que voce era mais competente. Estou ficando farto dessa historia.");
 
                 System.out.print(">");
                 decision = sc.nextLine();
@@ -1540,7 +1540,7 @@ public class Game {
 
             do {
                 System.out.println("[A] - Eu nao sei, Lorem. Tem algo estranho, eu comecei a falar com um cara chamado Manson..." +
-                        "\\n[B] - Lorem, finalmente. Eu comecei a falar com um cara chamado Manson, ele que convidou a Chris para uma festa, os dois sumiram.");
+                        "\n[B] - Lorem, finalmente. Eu comecei a falar com um cara chamado Manson, ele que convidou a Chris para uma festa, os dois sumiram.");
 
                 System.out.print(">");
                 decision = sc.nextLine();
@@ -1619,6 +1619,13 @@ public class Game {
                 delayMethod(1000);
                 System.out.println("Manson - Venha agora nessas coordenadas, 3.3411 N, 101.9854 E");
                 System.out.println("Manson - Boa noite.");
+
+                System.out.println("Aperte enter para continuar...");
+                sc.nextLine();
+
+                Printer.clearConsole();
+                System.out.println("");
+                Printer.endGame();
             }
 
         } else { //ERROWWWWW
