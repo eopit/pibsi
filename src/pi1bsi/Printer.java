@@ -524,6 +524,7 @@ public class Printer {
         System.out.println("Nivel de atraso (quantas vezes escolheu dormir no comeco): " + Game.ifLate);
         System.out.println("Nivel de intimidade com A Raquel: " + Game.intimacyRaquelWithMain);
         System.out.println("Nivel de intimidade com A Lorem: " + Game.intimacyLoremWithMain);
+        System.out.println("Chances de salvar a Chris (Precisa ser maior que 5 para conseguir): " + Game.saveChris);
 
         System.out.println("\nObrigado por jogar!");
         System.exit(1);

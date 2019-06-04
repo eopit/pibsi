@@ -1278,12 +1278,11 @@ public class Game {
         }
         while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
 
-        if (decision.equalsIgnoreCase("a")) {
+        if (decision.equalsIgnoreCase("a") || decision.equalsIgnoreCase("c")) {
             saveChris++;
         } else {
             saveChris--;
         }
-        // o c n vai fzr nada, por isso n tem
 
         System.out.println("MeU SiSttTeMa esSSta DaAaaNiFicCaDdo, " + nameMain);
         delayMethod(1200);
@@ -1374,8 +1373,7 @@ public class Game {
             }
             while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
 
-            // o A n vai fazer nada, por isos n tem
-            if (decision.equalsIgnoreCase("b")) {
+            if (decision.equalsIgnoreCase("a") || decision.equalsIgnoreCase("b")) {
                 saveChris++;
             } else { // c
                 saveChris--;
@@ -1418,10 +1416,10 @@ public class Game {
             }
             while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
 
-            if (decision.equalsIgnoreCase("a") || decision.equalsIgnoreCase("c")) {
-                saveChris--;
-            } else {
+            if (decision.equalsIgnoreCase("a") || decision.equalsIgnoreCase("b")) {
                 saveChris++;
+            } else {
+                saveChris--;
             }
             delayMethod(500);
 
@@ -1499,7 +1497,7 @@ public class Game {
 
         System.out.println("Te conto o que aconteceu se voce descobrir");
         delayMethod(500);
-        System.out.println("18 / 2(1+2)");
+        System.out.println("18 / (2(1+2))");
 
         do {
             System.out.println("[A] - 27.\n[B] - 12.\n[C] - 3.");
@@ -1600,6 +1598,13 @@ public class Game {
                     delayMethod(1000);
                     System.out.println("Manson - Venha agora nessas coordenadas, 3.3411 N, 101.9854 E");
                     System.out.println("Manson - Boa noite.");
+
+                    System.out.println("Aperte enter para continuar...");
+                    sc.nextLine();
+
+                    Printer.clearConsole();
+                    System.out.println("");
+                    Printer.endGame();
                 }
             } else {
                 do {
@@ -1613,12 +1618,9 @@ public class Game {
                 while (!decision.equalsIgnoreCase("a"));
 
                 delayMethod(500);
-                System.out.println("Manson - Tudo na vida sao escolhas, isso foi divertido.");
-                delayMethod(1000);
-                System.out.println("Manson - Lembre-se. A vida tem tanto significado quanto colocamos nela");
-                delayMethod(1000);
-                System.out.println("Manson - Venha agora nessas coordenadas, 3.3411 N, 101.9854 E");
-                System.out.println("Manson - Boa noite.");
+                System.out.println("Chris - Eu nao acredito que voces fizeram isso comigo. Ele eh um TRAIDOR.");
+                System.out.println("NAAAAO! POR FAV...");
+                System.out.println("...");
 
                 System.out.println("Aperte enter para continuar...");
                 sc.nextLine();
