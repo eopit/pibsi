@@ -528,5 +528,33 @@ public class Printer {
         System.out.println("\nObrigado por jogar!");
         System.exit(1);
     }
+
+    public static void comeBackVersionReset() throws IOException, InterruptedException {
+        clearConsole();
+
+        for (int i = 0; i < Game.progressBar.length; i++) { //cria a barra de loading
+            Game.progressBar[i] = "-";
+            if (i == 0) {
+                Game.progressBar[i] = "[";
+            } else if (i == 99) {
+                Game.progressBar[i] = "]";
+            } else if (i > 0 && i < 98) {
+                Game.progressBar[i] = "#";
+            }
+        }
+
+
+        for (int i = 96; i < Game.progressBar.length; i++) { //PRINTA A BARRA EM SI (VAI REPETIR 4 VEZES)
+            System.out.println("DOWNGRADE IN PROGRESS\t\t\t\tLOAADING..." + (i) + "%");
+            printProgressBar();
+            if (i >= 1 && i <= 99)
+                Game.progressBar[i] = "#";
+            Thread.sleep(3000);
+            clearConsole();
+        }
+        System.out.println("REBOOTING...");
+        Thread.sleep(2000);
+    }
 }
+
 

@@ -1302,12 +1302,338 @@ public class Game {
         while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
 
         if (decision.equalsIgnoreCase("a")) {
-            //OUTRO FINAL - EM DESENVOLVIMENTO - ***************************************************************************************************************//
-        } else {
+            delayMethod(1200);
+            Printer.comeBackVersionReset();
+            System.out.println(nameMain + ", o que aconteceu??");
+
+            do {
+                System.out.println("[A] - Eu nao sei, voce simplesmente fez backup e comecou a fazer " +
+                        "varias perguntas estranhas\n[B] - Voce surtou, comecou a perguntar umas coisas nada a ver, " +
+                        "que tipo de brincadeira eh essa?\n");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                    System.err.println("Digite apenas \"A\" ou \"B\"!");
+            }
+            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+            if (decision.equalsIgnoreCase("a")) {
+                saveChris++;
+            } else {
+                saveChris--;
+            }
+            delayMethod(500);
+            System.out.println("Me desculpe, eu nao sei o que esta acontecendo. Estou tentando analisar os dados...");
+            delayMethod(2300);
+            System.out.println("Consegui recuperar mais uma mensagem.");
+            delayMethod(500);
+
+            do {
+                System.out.println("[A] - Manson");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+                if (!decision.equalsIgnoreCase("A"))
+                    System.err.println("Digite apenas \"A\"!");
+            }
+            while (!decision.equalsIgnoreCase("a"));
+
+            System.out.println("Manson - Hey, Chris. Vai ser legal. Vamos!");
+            System.out.println("Chris - Eu nao vou.");
+            System.out.println("Manson - Sim, voce vai. Todos estao ansiosos para te conhecer.");
+            System.out.println("Chris - Eu ja disse que nao vou.");
+            System.out.println("Manson - Nao me faca fazer um feitico contra voce.");
+            System.out.println("Chris - Eu nao tenho medo da sua bruxaria falsa, para de me incomodar por favor.");
+            System.out.println("Manson - Mentira, voce eh a mais medrosa de todas. E nao tem nada de falso na minha magia.");
+            System.out.println("Chris - Ela eh falsa.");
+            System.out.println("Manson - Voce tem medo de tudo mesmo.");
+            System.out.println("Chris - Eu nao tenho medo de uma simples festa");
+            System.out.println("Manson - Mas tem medo de garotos, nao sei como o Robert te aguentou durante tanto tempo.");
+            System.out.println("Chris - Voce nao precisava ter dito isso");
+            System.out.println("Manson - Certo, me desculpe, passei dos limites. Vamo comigo, se voce nao gostar eu juro que vamos embora. Esteja " +
+                    "pronta as 20h no dia 22 que irei te buscar.");
+            System.out.println("Chris - Hm, certo. Mas irei colocar um despertador. Vou ficar pouco tempo.");
+            System.out.println("Manson - Perfeito, ja sera o suficiente.");
+            System.out.println("Manson - A proposito, no mesmo dia da festa eh o seu aniversario. Voce tera uma surpresa.");
+            System.out.println("Chris - Esta querendo me comprar?");
+            System.out.println("Manson - Jamais, so quero que conheca o quarto vermelho.");
+            System.out.println("...........................................................");
+
+            System.out.println("Descobriu alguma coisa?");
+
+            do {
+                System.out.println("[A] - Ela acabou indo para uma festa, no dia do aniversario dela, com um cara estranho\n[B] - " +
+                        "Eu nao entendi muito bem, ela saiu no dia 22, no dia do aniversario e sumiu logo depois.\n[C] - De verdade. " +
+                        "Isso esta ficando bizarro. Essa menina eh louca. So se envolve com quem nao presta.");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C"))
+                    System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
+            }
+            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
+
+            // o A n vai fazer nada, por isos n tem
+            if (decision.equalsIgnoreCase("b")) {
+                saveChris++;
+            } else { // c
+                saveChris--;
+            }
+
+            delayMethod(500);
+
+            System.out.println("Mais alguma coisa?");
+
+            do {
+                System.out.println("[A] - Ah, verdade. Eles comentaram sobre o quarto vermelho. Voce sabe o que eh?\n[B] - Nao sei, acho que quarto vermelho?" +
+                        "\n[C] - Ele estava falando sobre um quarto vermelho, era isso.");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C"))
+                    System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
+            }
+            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
+
+            if (decision.equalsIgnoreCase("a") || decision.equalsIgnoreCase("c")) {
+                saveChris++;
+            } else {
+                saveChris--;
+            }
+
+            delayMethod(500);
+
+            System.out.println("Quarto vermelho esta relacionado a um site da Deep Web, a Chris ja falou sobre isso algumas vezes.");
+            System.out.println("Nesse site as pessoas pagam para assistir execucao de pessoas. " +
+                    "Durante o ato, elas podem participar e opinar o que podem fazer com a vitima.");
+
+            do {
+                System.out.println("[A] - a Chris ja participou?\n[B] - Voce acha que ela pode estar envolvida?\n[C] - Voce acha que ela esta viva?");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C"))
+                    System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
+            }
+            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
+
+            if (decision.equalsIgnoreCase("a") || decision.equalsIgnoreCase("c")) {
+                saveChris--;
+            } else {
+                saveChris++;
+            }
+            delayMethod(500);
+
+            System.out.println("Nao sei, estou tentando coletar os dados no sistema mas a grande maioria esta danificada.");
+
+            do {
+                System.out.println("[A] - Essas informacoes sao vagas, nao chegamos a nenhuma conclusao. Vamos, Lorem, deve ter mais alguma pista\n" +
+                        "[B] - Pensei que voce era mais competente. Estou ficando farto dessa história.");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                    System.err.println("Digite apenas \"A\" ou \"B\"!");
+            }
+            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+            if (decision.equalsIgnoreCase("a")) {
+                saveChris++;
+            } else {
+                saveChris--;
+            }
+
+            delayMethod(500);
+            System.out.println("Espere!");
+            delayMethod(2000);
+            System.out.println("Encontrei mais um arquivo!");
+
+            do {
+                System.out.println("[A] - Ver o arquivo");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+                if (!decision.equalsIgnoreCase("A"))
+                    System.err.println("Digite apenas \"A\"!");
+            }
+            while (!decision.equalsIgnoreCase("a"));
+
+            Printer.clearConsole();
+            redRoom();
+
+        } else { //final ruim se nao voltar
             badFinal();
         }
     }
 
+
+    public static void redRoom() throws InterruptedException, IOException {
+
+        System.out.println("Red Room - Ja estou cansado de voce e esse fascinio pela Chris.");
+
+        do {
+            System.out.println("[A] - Quem eh voce?\n[B] - Cade a Chris?");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+        System.out.println("Nao te interessa. O ritual logo estara pronto e a nossa missao estara cumprida. " +
+                "Voce nunca conseguira impedir.");
+
+        do {
+            System.out.println("[A] - Que ritual? Olha, essa brincadeira eh muito sem graca. Onde esta a garota?\n" +
+                    "[B] - O que voce fez com a Chris? Que ritual?");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                System.err.println("Digite apenas \"A\" ou \"B\"!");
+        }
+        while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+
+        System.out.println("Te conto o que aconteceu se voce descobrir");
+        delayMethod(500);
+        System.out.println("18 / 2(1+2)");
+
+        do {
+            System.out.println("[A] - 27.\n[B] - 12.\n[C] - 3.");
+
+            System.out.print(">");
+            decision = sc.nextLine();
+            if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B") && !decision.equalsIgnoreCase("C"))
+                System.err.println("Digite apenas \"A\", \"B\" ou \"C\"!");
+        } while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b") && !decision.equalsIgnoreCase("c"));
+
+        delayMethod(1200);
+        if (decision.equalsIgnoreCase("c")) { //acertou
+            System.out.println("Certo. Vou te mostrar as conversas.");
+            System.out.println("Chris - Hey, onde voce esta? Ja estou te esperando a um tempao.\n" +
+                    "Chris - Atende o telefone.\n" +
+                    "Chris -Por que voce nao atende?\n" +
+                    "Chris - Manson, se voce nao atender eu vou embora.\n" +
+                    "Chris - Voce e seus atrasos. Nao tem festa nenhuma aqui.\n" +
+                    "Chris - Manson, isso nao eh legal! Eu estou sozinha no meio da selva\n" +
+                    "Chris - Manson???\n" +
+                    "Manson - Ola, peco desculpas pelos maus modos. A recepcao aqui eh horrivel! O Manson ja esta se divertindo, por isso estou indo te buscar.\n" +
+                    "Chris - Quem eh voce?\n" +
+                    "Manson - Nossa, desculpa, nem me apresentei. Pode me chamar de Saitan.\n" +
+                    "Chris - Certo, estou indo embora.\n" +
+                    "Manson - Nao va minha, querida. Fizemos esta festa apenas para voce. Estou indo ao teu encontro.\n" +
+                    "Chris - Como sabe onde estou?\n" +
+                    "Manson - Manson, me contou.\n" +
+                    "Chris - Eu prefiro que voce não venha, por favor\n" +
+                    "Manson - Fique calma, eu vou ligar para voce.\n" +
+                    "Manson - Atende.\n" +
+                    "Manson - Ja estou logo atras de voce!");
+            System.out.println("..............................");
+
+            System.out.println("Aperte enter para continuar.");
+            sc.nextLine();
+
+            System.out.println("Lorem - " + nameMain + ", o que aconteceu? O sistema esta muito danificado.");
+
+            do {
+                System.out.println("[A] - Eu nao sei, Lorem. Tem algo estranho, eu comecei a falar com um cara chamado Manson..." +
+                        "\\n[B] - Lorem, finalmente. Eu comecei a falar com um cara chamado Manson, ele que convidou a Chris para uma festa, os dois sumiram.");
+
+                System.out.print(">");
+                decision = sc.nextLine();
+                if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                    System.err.println("Digite apenas \"A\" ou \"B\"!");
+            }
+            while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+            delayMethod(1200);
+
+            System.out.println("Recebemos uma nova mensagem.");
+
+            System.out.println("Aperte enter para continuar");
+            sc.nextLine();
+
+            Printer.clearConsole();
+
+            delayMethod(500);
+
+
+            System.out.println("Manson - Ola, caro amigo. Eh bom que saiba que voce tem escolhas, como qualquer outra" +
+                    " pessoa no mundo tem escolhas e eu estou aqui para oferece-las. A escolha eh simples e mesmo assim nao eh.");
+
+            delayMethod(1200);
+
+            System.out.println("Estamos quase sem tempo, vamos la. O jogo ja vai comecar, quem vive para ver o sol amanha?");
+
+
+            if (saveChris > 5) {
+                do {
+                    System.out.println("[A] - Manson\n[B] - Chris");
+
+                    System.out.print(">");
+                    decision = sc.nextLine();
+                    if (!decision.equalsIgnoreCase("A") && !decision.equalsIgnoreCase("B"))
+                        System.err.println("Digite apenas \"A\" ou \"B\"!");
+                }
+                while (!decision.equalsIgnoreCase("a") && !decision.equalsIgnoreCase("b"));
+
+                if (decision.equalsIgnoreCase("a")) {
+                    System.out.println("Chris - Eu nao acredito que voces fizeram isso comigo. Ele eh um TRAIDOR.");
+                    System.out.println("NAAAAO! POR FAV...");
+                    System.out.println("...");
+
+                    System.out.println("Aperte enter para continuar...");
+                    sc.nextLine();
+
+                    Printer.clearConsole();
+                    System.out.println("");
+                    Printer.endGame();
+
+                } else { //ESCOLHER CHRIS
+                    delayMethod(500);
+                    System.out.println("Manson - Tudo na vida sao escolhas, isso foi divertido.");
+                    delayMethod(1000);
+                    System.out.println("Manson - Lembre-se. A vida tem tanto significado quanto colocamos nela");
+                    delayMethod(1000);
+                    System.out.println("Manson - Venha agora nessas coordenadas, 3.3411 N, 101.9854 E");
+                    System.out.println("Manson - Boa noite.");
+                }
+            } else {
+                do {
+                    System.out.println("[A] - Manson\n");
+
+                    System.out.print(">");
+                    decision = sc.nextLine();
+                    if (!decision.equalsIgnoreCase("A"))
+                        System.err.println("Digite apenas \"A\"!");
+                }
+                while (!decision.equalsIgnoreCase("a"));
+
+                delayMethod(500);
+                System.out.println("Manson - Tudo na vida sao escolhas, isso foi divertido.");
+                delayMethod(1000);
+                System.out.println("Manson - Lembre-se. A vida tem tanto significado quanto colocamos nela");
+                delayMethod(1000);
+                System.out.println("Manson - Venha agora nessas coordenadas, 3.3411 N, 101.9854 E");
+                System.out.println("Manson - Boa noite.");
+            }
+
+        } else { //ERROWWWWW
+            System.out.println("Red Room - Acho que alguem andou faltando nas aulas de matematica. Agora eh o fim da" +
+                    " Chris. Ela se envolveu conosco, achando que era apenas uma festinha de adolescentes boboes. Ninguem " +
+                    "mandou ela se meter. Ela sera executada AGORA.");
+
+            System.out.println("Aperte enter para continuar...");
+            sc.nextLine();
+
+            Printer.clearConsole();
+            System.out.println("");
+            Printer.endGame();
+        }
+    }
 
     private static void badFinal() throws InterruptedException, IOException {
         do {
@@ -1354,7 +1680,6 @@ public class Game {
         Printer.clearConsole();
         delayMethod(1200);
 
-
         System.out.println("Apos um dia cansativo no trabalho, voce chega em casa e liga a TV. No jornal esta aparecendo " +
                 "uma noticia que te parece familiar, entao voce para para escutar.\n*Passam-se 23 dias depois do desaparecimento " +
                 "de uma jovem, aparentemente ela estava envolvida com algum ritual religioso. O que parece eh que a jovem Chris " +
@@ -1367,11 +1692,8 @@ public class Game {
         Printer.clearConsole();
         System.out.println("");
         Printer.endGame();
-
     }
 }
-//ADICIONAR ENDGAME(); NO FINAL DO PROGRAMA!! << SENAO VAI RETORNAR TODAS AS FUNCOES
-//FAZER UM DESENHO DE GAME OVER NO END GAME COM ALGUMAS CARACTERISTICAS  AS FRASES ANTES EU COLOCO DEPOIS
 
 
 

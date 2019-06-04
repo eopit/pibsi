@@ -397,8 +397,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="1121" column="37" lean-forward="true" selection-start-line="1121" selection-start-column="37" selection-end-line="1121" selection-end-column="37" />
+            <state relative-caret-position="735">
+              <caret line="1699" lean-forward="true" selection-start-line="1699" selection-end-line="1699" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -409,8 +409,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="520" column="9" selection-start-line="520" selection-start-column="9" selection-end-line="520" selection-end-column="9" />
+            <state relative-caret-position="11151">
+              <caret line="531" column="30" selection-start-line="531" selection-start-column="30" selection-end-line="531" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -426,11 +426,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>senha</find>
-      <find>lore</find>
-      <find>loren</find>
-      <find>lower</find>
-      <find>intimacy</find>
       <find>loop</find>
       <find>creditos</find>
       <find>reiniciando sistem</find>
@@ -456,6 +451,11 @@
       <find>skull</find>
       <find>lorem</find>
       <find>digite apenas numeros</find>
+      <find>Essas informacoes</find>
+      <find>end</find>
+      <find>errow</find>
+      <find>saveChris++</find>
+      <find>sol</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -490,8 +490,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -514,6 +512,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -718,7 +718,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559439714876</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Finalizado ate o primeiro final Bad.">
+      <created>1559521707554</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1559521707554</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -734,7 +741,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13432837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13539445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -744,7 +751,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7638593" weight="0.31527627" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70629" visible="true" weight="0.3066089" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70629" weight="0.3066089" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.32936078" />
@@ -819,7 +826,8 @@
     <MESSAGE value="Capitulo 2 finalizado." />
     <MESSAGE value="Feito ate a parte das conversas do wpp depois do reset." />
     <MESSAGE value="Capitulo 2 finalizado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Capitulo 2 finalizado" />
+    <MESSAGE value="Finalizado ate o primeiro final Bad." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizado ate o primeiro final Bad." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -862,15 +870,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="520" column="9" selection-start-line="520" selection-start-column="9" selection-end-line="520" selection-end-column="9" />
+        <state relative-caret-position="11151">
+          <caret line="531" column="30" selection-start-line="531" selection-start-column="30" selection-end-line="531" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi1bsi/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="1121" column="37" lean-forward="true" selection-start-line="1121" selection-start-column="37" selection-end-line="1121" selection-end-column="37" />
+        <state relative-caret-position="735">
+          <caret line="1699" lean-forward="true" selection-start-line="1699" selection-end-line="1699" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
